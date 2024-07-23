@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+@import 'assets/themes/app-variables';
+
+@import 'bootstrap/scss/bootstrap';
+
+
+* {
+  box-sizing: border-box;
+}
+
+$app-page-max-width: 1140px;

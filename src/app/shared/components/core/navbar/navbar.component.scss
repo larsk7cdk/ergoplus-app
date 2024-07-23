@@ -1,0 +1,25 @@
+@import "../../../../../styles";
+
+.container-content {
+  max-width: 100%;
+
+  img {
+    height: 50px;
+  }
+
+  @media only screen and (min-width: $app-page-max-width) {
+    height: 100px;
+    max-width: $app-page-max-width;
+
+    img {
+      height: 100px;
+    }
+  }
+}
+
+.active {
+  color: #F45B07 !important;
+  text-decoration: underline;
+}
+
+

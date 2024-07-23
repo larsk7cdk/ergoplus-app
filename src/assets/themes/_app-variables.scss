@@ -1,0 +1,144 @@
+// Fonts
+$font-family-sans-serif: Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif, 'Segoe UI Symbol';
+
+
+// Colors
+$app-blue: #27187E;
+$app-orange: #F45B07;
+$app-beige: #F7F4E5;
+$app-yellow: #FFBF61;
+$app-green: #72A88D;
+
+$app-colors: (
+  "app-beige": $app-beige,
+  "app-blue": $app-blue,
+  "app-orange": $app-orange,
+  "app-yellow": $app-yellow,
+  "app-green": $app-green
+);
+
+// Tint and shade colors
+$app-beige-100: tint-color($app-beige, 80%);
+$app-beige-200: tint-color($app-beige, 60%);
+$app-beige-300: tint-color($app-beige, 40%);
+$app-beige-400: tint-color($app-beige, 20%);
+$app-beige-500: $app-beige;
+$app-beige-600: shade-color($app-beige, 20%);
+$app-beige-700: shade-color($app-beige, 40%);
+$app-beige-800: shade-color($app-beige, 60%);
+$app-beige-900: shade-color($app-beige, 80%);
+
+$app-blue-100: tint-color($app-blue, 80%);
+$app-blue-200: tint-color($app-blue, 60%);
+$app-blue-300: tint-color($app-blue, 40%);
+$app-blue-400: tint-color($app-blue, 20%);
+$app-blue-500: $app-blue;
+$app-blue-600: shade-color($app-blue, 20%);
+$app-blue-700: shade-color($app-blue, 40%);
+$app-blue-800: shade-color($app-blue, 60%);
+$app-blue-900: shade-color($app-blue, 80%);
+
+$app-orange-100: tint-color($app-orange, 80%);
+$app-orange-200: tint-color($app-orange, 60%);
+$app-orange-300: tint-color($app-orange, 40%);
+$app-orange-400: tint-color($app-orange, 20%);
+$app-orange-500: $app-orange;
+$app-orange-600: shade-color($app-orange, 20%);
+$app-orange-700: shade-color($app-orange, 40%);
+$app-orange-800: shade-color($app-orange, 60%);
+$app-orange-900: shade-color($app-orange, 80%);
+
+$app-yellow-100: tint-color($app-yellow, 80%);
+$app-yellow-200: tint-color($app-yellow, 60%);
+$app-yellow-300: tint-color($app-yellow, 40%);
+$app-yellow-400: tint-color($app-yellow, 20%);
+$app-yellow-500: $app-yellow;
+$app-yellow-600: shade-color($app-yellow, 20%);
+$app-yellow-700: shade-color($app-yellow, 40%);
+$app-yellow-800: shade-color($app-yellow, 60%);
+$app-yellow-900: shade-color($app-yellow, 80%);
+
+$app-green-100: tint-color($app-green, 80%);
+$app-green-200: tint-color($app-green, 60%);
+$app-green-300: tint-color($app-green, 40%);
+$app-green-400: tint-color($app-green, 20%);
+$app-green-500: $app-green;
+$app-green-600: shade-color($app-green, 20%);
+$app-green-700: shade-color($app-green, 40%);
+$app-green-800: shade-color($app-green, 60%);
+$app-green-900: shade-color($app-green, 80%);
+
+// Map of colors
+$app-beiges: (
+  "app-beige-100": $app-beige-100,
+  "app-beige-200": $app-beige-200,
+  "app-beige-300": $app-beige-300,
+  "app-beige-400": $app-beige-400,
+  "app-beige-500": $app-beige-500,
+  "app-beige-600": $app-beige-600,
+  "app-beige-700": $app-beige-700,
+  "app-beige-800": $app-beige-800,
+  "app-beige-900": $app-beige-900
+);
+
+$app-blues: (
+  "app-blue-100": $app-blue-100,
+  "app-blue-200": $app-blue-200,
+  "app-blue-300": $app-blue-300,
+  "app-blue-400": $app-blue-400,
+  "app-blue-500": $app-blue-500,
+  "app-blue-600": $app-blue-600,
+  "app-blue-700": $app-blue-700,
+  "app-blue-800": $app-blue-800,
+  "app-blue-900": $app-blue-900
+);
+
+$app-oranges: (
+  "app-orange-100": $app-orange-100,
+  "app-orange-200": $app-orange-200,
+  "app-orange-300": $app-orange-300,
+  "app-orange-400": $app-orange-400,
+  "app-orange-500": $app-orange-500,
+  "app-orange-600": $app-orange-600,
+  "app-orange-700": $app-orange-700,
+  "app-orange-800": $app-orange-800,
+  "app-orange-900": $app-orange-900
+);
+
+$app-yellows: (
+  "app-yellow-100": $app-yellow-100,
+  "app-yellow-200": $app-yellow-200,
+  "app-yellow-300": $app-yellow-300,
+  "app-yellow-400": $app-yellow-400,
+  "app-yellow-500": $app-yellow-500,
+  "app-yellow-600": $app-yellow-600,
+  "app-yellow-700": $app-yellow-700,
+  "app-yellow-800": $app-yellow-800,
+  "app-yellow-900": $app-yellow-900
+);
+
+$app-greens: (
+  "app-green-100": $app-green-100,
+  "app-green-200": $app-green-200,
+  "app-green-300": $app-green-300,
+  "app-green-400": $app-green-400,
+  "app-green-500": $app-green-500,
+  "app-green-600": $app-green-600,
+  "app-green-700": $app-green-700,
+  "app-green-800": $app-green-800,
+  "app-green-900": $app-green-900
+);
+
+$theme-colors: map-merge($theme-colors, $app-colors);
+$theme-colors: map-merge($theme-colors, $app-beiges);
+$theme-colors: map-merge($theme-colors, $app-blues);
+$theme-colors: map-merge($theme-colors, $app-oranges);
+$theme-colors: map-merge($theme-colors, $app-yellows);
+$theme-colors: map-merge($theme-colors, $app-greens);
+
+
+// Style anchor elements.
+
+$link-color: $app-orange;
+$link-hover-color: shift-color($link-color, $link-shade-percentage);
+

@@ -1,0 +1,11 @@
+@import "../../../../../styles";
+
+.container-content {
+  margin: 50px auto 0 auto;
+  width: 100%;
+
+  @media only screen and (min-width: $app-page-max-width) {
+    margin: 100px auto 0 auto;
+    max-width: $app-page-max-width;
+  }
+}
