@@ -137,8 +137,6 @@ $theme-colors: map-merge($theme-colors, $app-yellows);
 $theme-colors: map-merge($theme-colors, $app-greens);
 
 
-// Style anchor elements.
-
-$link-color: $app-orange;
-$link-hover-color: shift-color($link-color, $link-shade-percentage);
-
+//$nav-link-hover-color:
+$navbar-light-color: $app-orange;
+$navbar-light-hover-color: $app-orange-300;
