@@ -38,8 +38,8 @@ jobs:
       - name: Archive artifact
         uses: actions/upload-artifact@main
         with:
-          name: dist/ergoplus-app/browser
-          path: dist
+          name: dist
+          path: dist/ergoplus-app/browser
 
   deploy:
     name: Angular Deploy
