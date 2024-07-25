@@ -63,7 +63,6 @@ jobs:
           username: ergoplus.dk
           password: ${{ secrets.ftp_password }}
           port: 21
-          local-dir: dist/
           server-dir: test/
           dangerous-clean-slate: true
 
