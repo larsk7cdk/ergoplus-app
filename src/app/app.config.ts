@@ -49,7 +49,6 @@ export const appConfig: ApplicationConfig = {
       withInMemoryScrolling({ scrollPositionRestoration: 'top' })
     ),
     provideNgcCookieConsent(cookieConfig),
-    provideClientHydration(),
     { provide: LOCALE_ID, useValue: 'da-DK' },
     { provide: LocationStrategy, useClass: HashLocationStrategy }]
 };
