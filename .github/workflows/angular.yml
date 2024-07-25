@@ -51,7 +51,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: Download artifact
-        uses: actions/download-artifact
+        uses: actions/download-artifact@main
         with:
           name: dist
           path: dist
@@ -63,6 +63,7 @@ jobs:
           username: ergoplus.dk
           password: ${{ secrets.ftp_password }}
           port: 21
+          local-dir: dist/
           server-dir: test/
           dangerous-clean-slate: true
 
