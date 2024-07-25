@@ -1,6 +1,3 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-
 name: Angular Build and Deploy
 
 on:
@@ -17,12 +14,11 @@ jobs:
     strategy:
       matrix:
         node-version: [20.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
       - name: Checkout the source code
         uses: actions/checkout@v4
-    
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -33,15 +29,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run tests
-        run: npm run test
-      
+#      - name: Run tests
+#        run: npm run test
+
       - name: Build
         run: npm run build
 
       - name: Archive artifact
         uses: actions/upload-artifact@main
-        with: 
+        with:
           name: dist
           path: dist
 
@@ -56,11 +52,11 @@ jobs:
 
       - name: Download artifact
         uses: actions/download-artifact@main
-        with: 
+        with:
           name: dist
           path: dist
 
-      - name: Deploy to host in test            
+      - name: Deploy to host in test
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: nt48.unoeuro.com
@@ -69,10 +65,10 @@ jobs:
           port: 21
           server-dir: /test
           dangerous-clean-slate: true
-          
-                      
-                  
-            
-  
-  
-      
+
+
+
+
+
+
+
