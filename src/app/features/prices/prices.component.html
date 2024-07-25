@@ -1,6 +1,7 @@
 <app-page>
   <img src="assets/images/heropriser.png" class="w-100" />
 
+  <!-- Konsultation -->
   <section class="bg-app-green-200 p-3 my-3">
     <h2 class="text-app-blue">Konsultation</h2>
 
@@ -9,7 +10,7 @@
     <p>Der udføres dokumentation i forbindelse med hver kontakt og alt dokumentation opbevares efter gældende regler og
       lovgivning.</p>
 
-    <div class="d-flex flex-column">
+    <div class="d-flex flex-column mb-3">
       <div
         *ngTemplateOutlet="priceItemTemplate; context: { text: 'Timepris', price: '850,-'}">
       </div>
@@ -26,9 +27,10 @@
         *ngTemplateOutlet="priceItemTemplate; context: { text: 'Følgeskab til lægesamtale eller hospital. Der udføres referat af samtale. Timepris', price: '500,- + moms,-'}">
       </div>
     </div>
-    <p class="mt-3">Priserne er inklusiv lønsum</p>
+    <p>Priserne er inklusiv lønsum</p>
   </section>
 
+  <!-- Kørsel -->
   <section class="bg-app-green-100 p-3 my-3">
     <h2 class="text-app-blue">Kørsel</h2>
     <div class="d-flex flex-column">
@@ -41,6 +43,7 @@
     </div>
   </section>
 
+  <!-- Aflysning -->
   <section class="bg-app-green-200 p-3 my-3">
     <h2 class="text-app-blue">Aflysning</h2>
 
@@ -48,6 +51,7 @@
     <p>Afbud under 24 timer før aftale tid koster fuld pris</p>
   </section>
 
+  <!-- Betaling -->
   <section class="bg-app-green-100 p-3 my-3">
     <h2 class="text-app-blue">Betaling</h2>
 
