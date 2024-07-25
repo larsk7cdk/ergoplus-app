@@ -12,19 +12,19 @@
 
     <div class="d-flex flex-column mb-3">
       <div
-        *ngTemplateOutlet="priceItemTemplate; context: { text: 'Timepris', price: '850,-'}">
+        *ngTemplateOutlet="priceItemTemplate; context: { text: 'Timepris', price: '850,-', textcolor: 'text-black-50'}">
       </div>
       <div
         *ngTemplateOutlet="priceItemTemplate; context: { text: 'Klippekort á 5 timer', price: '4000,-'}">
       </div>
       <div
-        *ngTemplateOutlet="priceItemTemplate; context: { text: 'Klippekort á 10 timer', price: '7500,-'}">
+        *ngTemplateOutlet="priceItemTemplate; context: { text: 'Klippekort á 10 timer', price: '7500,-', textcolor: 'text-black-50'}">
       </div>
       <div
         *ngTemplateOutlet="priceItemTemplate; context: { text: 'Opstartssamtale, ergoterapeutisk funktionsvurdering/undersøgelse og målsætning (kan tage op til 90 min og kan være over 2 besøg)', price: '1300,-'}">
       </div>
       <div
-        *ngTemplateOutlet="priceItemTemplate; context: { text: 'Følgeskab til lægesamtale eller hospital. Der udføres referat af samtale. Timepris', price: '500,- + moms,-'}">
+        *ngTemplateOutlet="priceItemTemplate; context: { text: 'Følgeskab til lægesamtale eller hospital. Der udføres referat af samtale. Timepris', price: '500,- + moms,-', textcolor: 'text-black-50'}">
       </div>
     </div>
     <p>Priserne er inklusiv lønsum</p>
@@ -35,7 +35,7 @@
     <h2 class="text-app-blue">Kørsel</h2>
     <div class="d-flex flex-column">
       <div
-        *ngTemplateOutlet="priceItemTemplate; context: { text: 'Første halve time', price: 'gratis'}">
+        *ngTemplateOutlet="priceItemTemplate; context: { text: 'Første halve time', price: 'gratis', textcolor: 'text-black-50'}">
       </div>
       <div
         *ngTemplateOutlet="priceItemTemplate; context: { text: 'Takst pr. påbegyndt halve time', price: '200,-'}">
@@ -61,7 +61,7 @@
 
 <!-- Template for price item -->
 <ng-template #priceItemTemplate let-text="text" let-price="price" let-textcolor="textcolor">
-  <div class="d-flex mb-1 column-gap-2">
+  <div class="d-flex mb-1 column-gap-2" [ngClass]="textcolor">
     <div class="col-9 col-lg-8">
       {{ text }}
     </div>
