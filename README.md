@@ -1,4 +1,4 @@
-<h1 style="text-align: center">
+<h1 align="center">>
   <br>
   <a href="http://www.ergoplus.dk"><img src="https://raw.githubusercontent.com/larsk7cdk/ergoplus-app/main/public/assets/images/logosort.png" alt="ErgoPlus" width="200"></a>
   <br>
@@ -8,11 +8,7 @@
 
 <h4 align="center">A website for ErgoPlus built on top of <a href="http://angular.io" target="_blank">Angular</a>.</h4>
 
-<p style="text-align: center">
-
-</p>
-
-<p style="text-align: center">
+<p align="center">>
   <a href="#how-to-use">How To Use</a> •
   <a href="#credits">Credits</a> •
   <a href="#license">License</a>
