@@ -6,7 +6,7 @@
 
 <h4 align="center">A website for ErgoPlus built on top of <a href="http://angular.io" target="_blank">Angular</a>.</h4>
 
-<p align="center">>
+<p align="center">
   <a href="#how-to-use">How To Use</a> •
   <a href="#credits">Credits</a> •
   <a href="#license">License</a>
