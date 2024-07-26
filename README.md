@@ -1,10 +1,8 @@
 <h1 align="center">
-  <br>
-  <a href="http://www.ergoplus.dk"><img src="https://raw.githubusercontent.com/larsk7cdk/ergoplus-app/main/public/assets/images/logosort.png" alt="ErgoPlus" width="200"></a>
-  <br>
-  ErgoPlus App
-  <br>
+  <a href="http://www.ergoplus.dk"><img src="https://raw.githubusercontent.com/larsk7cdk/ergoplus-app/main/public/assets/images/logosort.png" alt="ErgoPlus" width="200"></a> 
 </h1>
+
+<h2 align="center">ErgoPlus App</h2>
 
 <h4 align="center">A website for ErgoPlus built on top of <a href="http://angular.io" target="_blank">Angular</a>.</h4>
 
