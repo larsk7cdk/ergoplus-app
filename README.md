@@ -1,4 +1,4 @@
-<h1 align="center">>
+<h1 align="center">
   <br>
   <a href="http://www.ergoplus.dk"><img src="https://raw.githubusercontent.com/larsk7cdk/ergoplus-app/main/public/assets/images/logosort.png" alt="ErgoPlus" width="200"></a>
   <br>
