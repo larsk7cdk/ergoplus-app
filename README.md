@@ -12,7 +12,7 @@
   <a href="#license">License</a>
 </p>
 
-[![Angular Build and Deploy](https://github.com/larsk7cdk/ergoplus-app/actions/workflows/angular.yml/badge.svg)](https://github.com/larsk7cdk/ergoplus-app/actions/workflows/angular.yml)
+[![Angular Build and Deploy](https://github.com/larsk7cdk/ergoplus-app/actions/workflows/angular-main.yml/badge.svg)](https://github.com/larsk7cdk/ergoplus-app/actions/workflows/angular.yml)
 
 ## How To Use
 
