@@ -1,7 +1,10 @@
 @import "../../../../../styles";
 
 img {
+  padding-left: 12px;
+  padding-right: 12px;
   height: 50px;
+  margin-bottom: 10px;
 }
 
 @include media-breakpoint-up(md) {
@@ -11,7 +14,7 @@ img {
 }
 
 .active {
-  color: $app-orange-900 !important;
+  color: $app-blue-300 !important;
   text-decoration: underline;
 }
 
