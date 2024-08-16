@@ -1,8 +1,7 @@
 @import "../../../../../styles";
 
 nav {
-  padding: 0 12px 0 12px !important;
-  height: 60px;
+  padding: 10px !important;
 }
 
 img {
@@ -10,12 +9,8 @@ img {
 }
 
 @include media-breakpoint-up(md) {
-  nav {
-    height: 100px;
-  }
-
   img {
-    height: 80px;
+    height: 60px;
   }
 }
 
