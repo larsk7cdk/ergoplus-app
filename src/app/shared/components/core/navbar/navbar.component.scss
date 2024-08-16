@@ -1,15 +1,21 @@
 @import "../../../../../styles";
 
+nav {
+  padding: 0 12px 0 12px !important;
+  height: 60px;
+}
+
 img {
-  padding-left: 12px;
-  padding-right: 12px;
-  height: 50px;
-  margin-bottom: 10px;
+  height: 40px;
 }
 
 @include media-breakpoint-up(md) {
-  img {
+  nav {
     height: 100px;
+  }
+
+  img {
+    height: 80px;
   }
 }
 
