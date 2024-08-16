@@ -5,11 +5,13 @@ export const routes: Routes = [
   {
     path: 'home',
     title: 'Forside',
+    data: { title: 'Ergoterapi, Gør din hverdag mulig' },
     component: HomeComponent
   },
   {
     path: 'prices',
     title: 'Priser',
+    data: { title: 'Priser' },
     loadComponent: () => import('./features/prices/prices.component')
       .then(m => m.PricesComponent)
   },

@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
+import { HeaderService } from './header.service';
 
 @Component({
   selector: 'app-header',
@@ -10,5 +11,5 @@ import { NavbarComponent } from '../navbar/navbar.component';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {
-
+  protected headerService = inject(HeaderService);
 }
