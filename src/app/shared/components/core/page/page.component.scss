@@ -1,9 +1,9 @@
 @import "../../../../../styles";
 
 .calc-content-height {
-  min-height: calc(100dvh - 242px);
+  //min-height: calc(100dvh - 242px);
 
   @include media-breakpoint-up(md) {
-    min-height: calc(100dvh - 141px);
+    //min-height: calc(100dvh - 141px);
   }
 }
