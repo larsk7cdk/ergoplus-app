@@ -1,6 +1,7 @@
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
+@import "bootstrap/scss/buttons";
 
 @import 'assets/themes/app-variables';
 
@@ -16,4 +17,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Serif", Roboto, serif;
   color: $app-blue;
   margin: 0;
+}
+
+
+// Buttons
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+  background-color: $app-orange !important;
+}
+
+.btn-primary:hover {
+  background-color: $app-orange-300 !important;
 }

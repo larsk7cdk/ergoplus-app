@@ -10,12 +10,12 @@ import {
 import { PageComponent } from '../../shared/components/core/page/page.component';
 import Player from '@vimeo/player';
 import { HeaderService } from '../../shared/components/core/header/header.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [PageComponent],
+  imports: [PageComponent, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
