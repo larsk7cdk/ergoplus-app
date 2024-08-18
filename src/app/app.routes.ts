@@ -5,7 +5,7 @@ export const routes: Routes = [
   {
     path: 'home',
     title: 'Forside',
-    data: { title: 'Ergoterapi, Gør din hverdag mulig' },
+    data: { title: 'Ergoterapi \nGør din hverdag mulig' },
     component: HomeComponent
   },
   {

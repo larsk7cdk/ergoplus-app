@@ -1,15 +1,24 @@
 @import "../../../../../styles";
 
-.hero-image {
-  margin-top: 110px;
-  text-align: center;
-  width: 100%;
+.hero {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  margin-top: 100px;
 }
 
 h1 {
-  position: relative;
-  bottom: 1.5rem;
-  padding-right: 1rem;
-  text-align: end;
   font-style: italic;
+  white-space: pre-line;
+}
+
+@include media-breakpoint-down(md) {
+  .hero {
+    margin-top: 80px;
+  }
+
+  .hero-image {
+    text-align: center;
+    width: 100%;
+  }
 }
