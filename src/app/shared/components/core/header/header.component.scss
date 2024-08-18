@@ -2,6 +2,7 @@
 
 .hero {
   display: flex;
+  flex-shrink: 1;
   justify-content: space-between;
   flex-wrap: wrap-reverse;
   margin-top: 100px;
@@ -12,13 +13,12 @@ h1 {
   white-space: pre-line;
 }
 
+img {
+  width: 100%;
+}
+
 @include media-breakpoint-down(md) {
   .hero {
-    margin-top: 80px;
-  }
-
-  .hero-image {
-    text-align: center;
-    width: 100%;
+    margin-top: 75px;
   }
 }
