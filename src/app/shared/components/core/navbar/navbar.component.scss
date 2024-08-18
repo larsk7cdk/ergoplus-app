@@ -1,17 +1,21 @@
 @import "../../../../../styles";
 
+nav {
+  padding: 10px !important;
+}
+
 img {
-  height: 50px;
+  height: 40px;
 }
 
 @include media-breakpoint-up(md) {
   img {
-    height: 100px;
+    height: 60px;
   }
 }
 
 .active {
-  color: $app-orange-900 !important;
+  color: $app-blue-300 !important;
   text-decoration: underline;
 }
 

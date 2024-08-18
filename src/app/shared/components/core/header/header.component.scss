@@ -1,0 +1,33 @@
+@import "../../../../../styles";
+
+.hero {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  margin-top: 100px;
+}
+
+h1 {
+  font-style: italic;
+  white-space: pre-line;
+}
+
+img {
+  width: 100%;
+}
+
+@include media-breakpoint-down(lg) {
+  .hero {
+    margin-top: 75px;
+  }
+
+  .hero-image {
+    text-align: center;
+    width: 100%;
+  }
+
+  img {
+    width: 80%;
+  }
+}

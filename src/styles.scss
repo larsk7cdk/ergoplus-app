@@ -7,6 +7,13 @@
 @import 'bootstrap/scss/bootstrap';
 
 
-* {
+*, .container {
   box-sizing: border-box;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Serif", Roboto, serif;
+  color: $app-blue;
+  margin: 0;
 }

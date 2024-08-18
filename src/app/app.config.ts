@@ -1,8 +1,6 @@
 import { ApplicationConfig, LOCALE_ID, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter, withInMemoryScrolling, withViewTransitions } from '@angular/router';
-
 import { routes } from './app.routes';
-import { provideClientHydration } from '@angular/platform-browser';
 
 import localeDa from '@angular/common/locales/da';
 import { HashLocationStrategy, LocationStrategy, registerLocaleData } from '@angular/common';
