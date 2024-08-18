@@ -17,8 +17,17 @@ img {
   width: 100%;
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   .hero {
     margin-top: 75px;
+  }
+
+  .hero-image {
+    text-align: center;
+    width: 100%;
+  }
+
+  img {
+    width: 50%;
   }
 }
