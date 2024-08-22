@@ -16,7 +16,7 @@ header{
   background-image: url("/assets/images/hero-ai.png");
 
   /* Set a specific height */
-  height: 300px;
+  height: 250px;
 
   /* Position and center the image to scale nicely on all screens */
   //background-position: center;
@@ -39,7 +39,7 @@ h1 {
 @include media-breakpoint-up(md) {
   .hero {
     margin-top: 80px;
-    height: 400px;
+    height: 350px;
   }
   }
 
