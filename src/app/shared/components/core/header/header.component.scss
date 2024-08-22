@@ -1,11 +1,29 @@
 @import "../../../../../styles";
 
+header{
+  z-index: 500;
+
+}
+
 .hero {
-  display: flex;
-  flex-shrink: 1;
-  justify-content: space-between;
-  flex-wrap: wrap-reverse;
-  margin-top: 100px;
+  //display: flex;
+  //flex-shrink: 1;
+  //justify-content: space-between;
+  //flex-wrap: wrap-reverse;
+  margin-top: 60px;
+
+  //background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/hero-ai.png");
+  background-image: url("/assets/images/hero-ai.png");
+
+  /* Set a specific height */
+  height: 300px;
+
+  /* Position and center the image to scale nicely on all screens */
+  //background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  //position: relative;
+
 }
 
 h1 {
@@ -13,21 +31,29 @@ h1 {
   white-space: pre-line;
 }
 
-img {
-  width: 100%;
-}
+//img {
+//
+//  width: 100%;
+//}
 
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-up(md) {
   .hero {
-    margin-top: 75px;
+    margin-top: 80px;
+    height: 400px;
+  }
   }
 
-  .hero-image {
-    text-align: center;
-    width: 100%;
+@include media-breakpoint-up(lg) {
+  .hero {
+    height: 600px;
   }
 
-  img {
-    width: 80%;
-  }
+  //.hero-image {
+  //  text-align: center;
+  //  width: 100%;
+  //}
+  //
+  //img {
+  //  width: 80%;
+  //}
 }
