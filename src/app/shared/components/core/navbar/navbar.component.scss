@@ -15,7 +15,8 @@ img {
 }
 
 .active {
-  color: $app-blue-300 !important;
+  color: $app-blue-900 !important;
+  font-weight: bold;
   text-decoration: underline;
 }
 

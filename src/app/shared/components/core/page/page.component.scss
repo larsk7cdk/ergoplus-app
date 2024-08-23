@@ -1,9 +1,11 @@
 @import "../../../../../styles";
 
 .calc-content-height {
-  //min-height: calc(100dvh - 242px);
+  position: relative;
+  margin-top: -50px;
+  z-index: 1000;
+
 
   @include media-breakpoint-up(md) {
-    //min-height: calc(100dvh - 141px);
   }
 }

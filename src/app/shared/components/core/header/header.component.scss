@@ -1,33 +1,35 @@
 @import "../../../../../styles";
 
-.hero {
-  display: flex;
-  flex-shrink: 1;
-  justify-content: space-between;
-  flex-wrap: wrap-reverse;
-  margin-top: 100px;
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/images/header/hero.png");
+  margin-top: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  z-index: 500;
 }
 
 h1 {
   font-style: italic;
   white-space: pre-line;
+  color: white;
 }
 
-img {
-  width: 100%;
+@include media-breakpoint-up(sm) {
+  h1 {
+    color: $app-blue;
+  }
 }
 
-@include media-breakpoint-down(lg) {
-  .hero {
-    margin-top: 75px;
+@include media-breakpoint-up(md) {
+  header {
+    margin-top: 80px;
+    height: 350px;
   }
+}
 
-  .hero-image {
-    text-align: center;
-    width: 100%;
-  }
-
-  img {
-    width: 80%;
+@include media-breakpoint-up(lg) {
+  header {
+    height: 600px;
   }
 }
