@@ -2,11 +2,12 @@ import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/cor
 import { ActivatedRoute } from '@angular/router';
 import { HeaderService } from '../../shared/components/core/header/header.service';
 import { PageComponent } from '../../shared/components/core/page/page.component';
+import { CardComponent } from '../../shared/components/presentational/card/card.component';
 
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [PageComponent],
+  imports: [PageComponent, CardComponent],
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
