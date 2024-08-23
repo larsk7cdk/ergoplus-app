@@ -1,13 +1,12 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './features/home/home.component';
-import { Home2Component } from './features/home2/home2.component';
 
 export const routes: Routes = [
   {
     path: 'home',
     title: 'Forside',
     data: { title: 'Ergoterapi \nGør din hverdag mulig' },
-    component: Home2Component
+    component: HomeComponent
   },
   {
     path: 'services',

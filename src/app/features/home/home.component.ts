@@ -11,11 +11,12 @@ import { PageComponent } from '../../shared/components/core/page/page.component'
 import Player from '@vimeo/player';
 import { HeaderService } from '../../shared/components/core/header/header.service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { CardComponent } from '../../shared/components/presentational/card/card.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [PageComponent, RouterLink],
+  imports: [PageComponent, RouterLink, CardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
