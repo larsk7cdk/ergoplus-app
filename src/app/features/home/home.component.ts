@@ -37,6 +37,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    new Player(this.playerContainer.nativeElement, { url: this.url, width: 300 });
+    new Player(this.playerContainer.nativeElement, { url: this.url, width: 280 });
   }
 }
