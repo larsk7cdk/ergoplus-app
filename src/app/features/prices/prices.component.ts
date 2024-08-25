@@ -3,11 +3,12 @@ import { PageComponent } from '../../shared/components/core/page/page.component'
 import { NgClass, NgTemplateOutlet } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { HeaderService } from '../../shared/components/core/header/header.service';
+import { CardComponent } from '../../shared/components/presentational/card/card.component';
 
 @Component({
   selector: 'app-prices',
   standalone: true,
-  imports: [PageComponent, NgTemplateOutlet, NgClass],
+  imports: [PageComponent, NgTemplateOutlet, NgClass, CardComponent],
   templateUrl: './prices.component.html',
   styleUrl: './prices.component.scss'
 })
