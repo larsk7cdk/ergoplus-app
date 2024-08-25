@@ -1,8 +1,6 @@
 <app-page>
   <!-- Konsultation -->
-  <section class="bg-app-green-200 p-3">
-    <h2 class="text-app-blue">Konsultation</h2>
-
+  <app-card title="Konsultation" theme_bg="bg-app-green-100">
     <p>Der tilbydes uforpligtende samtale pr. telefon, ca. 30 minutter</p>
 
     <p>Der udføres dokumentation i forbindelse med hver kontakt og alt dokumentation opbevares efter gældende regler og
@@ -25,12 +23,11 @@
         *ngTemplateOutlet="priceItemTemplate; context: { text: 'Følgeskab til lægesamtale eller hospital. Der udføres referat af samtale. Timepris', price: '500,- + moms,-', textcolor: 'text-black-50'}">
       </div>
     </div>
-    <p>Priserne er inklusiv lønsum</p>
-  </section>
+    <p><i>Priserne er inklusiv lønsum</i></p>
+  </app-card>
 
   <!-- Kørsel -->
-  <section class="bg-app-green-100 p-3">
-    <h2 class="text-app-blue">Kørsel</h2>
+  <app-card title="Kørsel" theme_bg="bg-app-blue-100">
     <div class="d-flex flex-column mb-2">
       <div
         *ngTemplateOutlet="priceItemTemplate; context: { text: 'Første halve time', price: 'gratis', textcolor: 'text-black-50'}">
@@ -39,22 +36,20 @@
         *ngTemplateOutlet="priceItemTemplate; context: { text: 'Takst pr. påbegyndt halve time', price: '200,-'}">
       </div>
     </div>
-  </section>
+  </app-card>
 
   <!-- Aflysning -->
-  <section class="bg-app-green-200 p-3">
-    <h2 class="text-app-blue">Aflysning</h2>
-
+  <app-card title="Aflysning" theme_bg="bg-app-green-100">
     <p>Afbud inden 24 timer før aftalte tid er gratis</p>
     <p>Afbud under 24 timer før aftale tid koster fuld pris</p>
-  </section>
+  </app-card>
+
 
   <!-- Betaling -->
-  <section class="bg-app-green-100 p-3">
-    <h2 class="text-app-blue">Betaling</h2>
-
+  <app-card title="Betaling" theme_bg="bg-app-blue-100">
     <p>Betaling sker inden behandlingens start via, bankoverførelse eller mobilepay</p>
-  </section>
+
+  </app-card>
 </app-page>
 
 <!-- Template for price item -->
