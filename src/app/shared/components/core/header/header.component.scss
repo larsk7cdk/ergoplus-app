@@ -1,35 +1,56 @@
 @import "../../../../../styles";
 
-header {
+.banner {
+  background: $app-beige-200;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.banner-image {
+  display: flex;
+  justify-content: center;
+  align-items: end;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/images/header/hero.png");
-  margin-top: 60px;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 250px;
-  z-index: 500;
+  margin-bottom: 2.5em;
+  height: 323px;
+  width: 500px;
+}
+
+.banner-left, .banner-right {
+  display: none;
+  z-index: 501;
 }
 
 h1 {
   font-style: italic;
   white-space: pre-line;
   color: white;
-}
-
-@include media-breakpoint-up(sm) {
-  h1 {
-    color: $app-blue;
-  }
+  z-index: 502;
 }
 
 @include media-breakpoint-up(md) {
-  header {
-    margin-top: 80px;
-    height: 350px;
+  .banner {
+    margin-top: 40px;
+  }
+
+  .banner-image {
+    height: 400px;
+    width: 620px;
   }
 }
 
 @include media-breakpoint-up(lg) {
-  header {
-    height: 600px;
+  .banner-left, .banner-right {
+    position: relative;
+    display: block;
+  }
+  .banner-left {
+    left: 100px;
+  }
+  .banner-right {
+    right: 100px;
   }
 }
