@@ -11,8 +11,8 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/images/header/hero.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
-  width: 620px;
+  height: 300px;
+  width: 465px;
 }
 
 .banner-left, .banner-right {
@@ -22,7 +22,7 @@
 
 h1 {
   position: relative;
-  top: 270px;
+  top: 190px;
   text-align: center;
   font-style: italic;
   white-space: pre-line;
@@ -33,6 +33,15 @@ h1 {
 @include media-breakpoint-up(md) {
   .banner {
     margin-top: 40px;
+  }
+
+  .banner-image {
+    height: 400px;
+    width: 620px;
+  }
+
+  h1 {
+    top: 260px;
   }
 }
 
