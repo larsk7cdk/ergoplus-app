@@ -1,0 +1,7 @@
+@import "../../../styles";
+
+@include media-breakpoint-up(lg) {
+  app-card {
+    width: 30%;
+  }
+}
