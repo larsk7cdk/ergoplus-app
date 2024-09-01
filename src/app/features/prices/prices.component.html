@@ -1,6 +1,6 @@
 <app-page>
   <!-- Konsultation -->
-  <app-card title="Konsultation" theme_bg="bg-app-green-100">
+  <app-card title="Konsultation" ngClasses="bg-app-green-100 mx-3 mx-md-0">
     <p>Der tilbydes uforpligtende samtale pr. telefon, ca. 30 minutter</p>
 
     <p>Der udføres dokumentation i forbindelse med hver kontakt og alt dokumentation opbevares efter gældende regler og
@@ -27,7 +27,7 @@
   </app-card>
 
   <!-- Kørsel -->
-  <app-card title="Kørsel" theme_bg="bg-app-blue-100">
+  <app-card title="Kørsel" ngClasses="bg-app-blue-100 mt-3 mx-3 mx-md-0">
     <div class="d-flex flex-column mb-2">
       <div
         *ngTemplateOutlet="priceItemTemplate; context: { text: 'Første halve time', price: 'gratis', textcolor: 'text-black-50'}">
@@ -39,14 +39,14 @@
   </app-card>
 
   <!-- Aflysning -->
-  <app-card title="Aflysning" theme_bg="bg-app-green-100">
+  <app-card title="Aflysning" ngClasses="bg-app-green-100 mt-3 mx-3 mx-md-0">
     <p>Afbud inden 24 timer før aftalte tid er gratis</p>
     <p>Afbud under 24 timer før aftale tid koster fuld pris</p>
   </app-card>
 
 
   <!-- Betaling -->
-  <app-card title="Betaling" theme_bg="bg-app-blue-100">
+  <app-card title="Betaling" ngClasses="bg-app-blue-100 my-3 mx-3 mx-md-0">
     <p>Betaling sker inden behandlingens start via, bankoverførelse eller mobilepay</p>
 
   </app-card>

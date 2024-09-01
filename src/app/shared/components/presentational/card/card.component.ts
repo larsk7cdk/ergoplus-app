@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { NgClass } from '@angular/common';
+
 
 @Component({
   selector: 'app-card',
@@ -15,6 +16,5 @@ export class CardComponent {
   title: string = '';
 
   @Input()
-  theme_bg: string = '';
-
+  ngClasses: string = '';
 }
