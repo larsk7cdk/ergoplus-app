@@ -9,6 +9,13 @@ export const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'ergotherapy',
+    title: 'Ergoterapi',
+    data: { title: 'Ergoterapi' },
+    loadComponent: () => import('./features/ergotherapy/ergotherapy.component')
+      .then(m => m.ErgotherapyComponent)
+  },
+  {
     path: 'services',
     title: 'Ydelser',
     data: { title: 'Ydelser' },
@@ -21,6 +28,13 @@ export const routes: Routes = [
     data: { title: 'Priser' },
     loadComponent: () => import('./features/prices/prices.component')
       .then(m => m.PricesComponent)
+  },
+  {
+    path: 'ergoplus',
+    title: 'ErgoPlus',
+    data: { title: 'ErgoPlus' },
+    loadComponent: () => import('./features/ergoplus/ergoplus.component')
+      .then(m => m.ErgoplusComponent)
   },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
