@@ -1,7 +1,6 @@
 @import "../../../styles";
 
-@include media-breakpoint-up(lg) {
-  app-card {
-    width: 30%;
-  }
+img {
+  border-radius: 15px;
+  height: 150px;
 }
