@@ -16,13 +16,6 @@ export const routes: Routes = [
       .then(m => m.ErgotherapyComponent)
   },
   {
-    path: 'services',
-    title: 'Ydelser',
-    data: { title: 'Ydelser' },
-    loadComponent: () => import('./features/services/services.component')
-      .then(m => m.ServicesComponent)
-  },
-  {
     path: 'prices',
     title: 'Priser',
     data: { title: 'Priser' },
@@ -31,8 +24,8 @@ export const routes: Routes = [
   },
   {
     path: 'ergoplus',
-    title: 'ErgoPlus',
-    data: { title: 'ErgoPlus' },
+    title: 'Om ErgoPlus',
+    data: { title: 'Om ErgoPlus' },
     loadComponent: () => import('./features/ergoplus/ergoplus.component')
       .then(m => m.ErgoplusComponent)
   },
