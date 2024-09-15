@@ -1,14 +1,10 @@
 import {
-  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
   inject,
-  OnInit,
-  ViewChild
+  OnInit
 } from '@angular/core';
 import { PageComponent } from '../../shared/components/core/page/page.component';
-import Player from '@vimeo/player';
 import { HeaderService } from '../../shared/components/core/header/header.service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { CardComponent } from '../../shared/components/presentational/card/card.component';
@@ -21,22 +17,12 @@ import { CardComponent } from '../../shared/components/presentational/card/card.
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HomeComponent implements OnInit, AfterViewInit {
-  @ViewChild('playerContainer') playerContainer: ElementRef;
-  url = 'https://vimeo.com/311435084';
+export class HomeComponent implements OnInit {
 
   protected activatedRoute = inject(ActivatedRoute);
   protected headerService = inject(HeaderService);
 
-  constructor() {
-    this.playerContainer = new ElementRef(null);
-  }
-
   ngOnInit(): void {
     this.headerService.setTitle(this.activatedRoute.snapshot.data['title']);
-  }
-
-  ngAfterViewInit() {
-    new Player(this.playerContainer.nativeElement, { url: this.url, width: 280 });
   }
 }

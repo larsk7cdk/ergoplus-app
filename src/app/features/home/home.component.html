@@ -1,133 +1,82 @@
 <app-page>
-  <!--
-  <app-card title="Hvorfor vælge ergoterapi?" ngClasses="bg-app-green-100  mx-3 mx-md-0">
+  <app-card title="Du har ikke så mange kræfter" ngClasses="bg-app-green-100 mx-3 mx-md-0">
     <div col-1>
       <p>
-        Ergoterapi har fokus på de enkelte menneskes muligheder for at udføre dagligdags aktiviteter. Når man mister
-        eller får nedsat én eller flere fysiske, psykiske og sociale funktioner, kan man have gavn af
-        ergoterapeutisk
-        intervention.
+        Du har svært ved at åbne flasker, nå ned til gulvet eller stå i længere tid. Du kan være nervøs for at tage
+        bussen eller cykle.
       </p>
-      <p class="me-3">
-        Jeg træner din krop, psyke og hjerne, og udvikler dine færdigheder i samarbejde med dig. Sammen finder vi
-        frem
-        til løsninger, som passer til dit liv, dine værdier, ressourcer og vaner. Målet er en hverdag med indhold og
-        struktur, hvor du kan deltage i de aktiviteter, som du finder meningsfulde.
+      <p class="mt-3">
+        Jeg tilbyder hjælp til at afprøve hjælpemidler, og sammen med dig lave en plan for, hvordan du kan træne i det,
+        der er vigtigst for dig.
       </p>
     </div>
     <div col-2>
-      <div #playerContainer></div>
+      <img src="assets/illustrations/services/elderly-people-professional_07.png" alt="Illustration" />
     </div>
   </app-card>
 
-  <app-card title="Forebyggelse, træning og behandling i eget hjem" ngClasses="bg-app-blue-100 mt-3 mx-3 mx-md-0">
-    <div>
-      <p>
-        Står du i en situation, hvor kræfterne er blevet mindre eller overskud forhindrer dig i at gøre som du plejer.
-        Du
-        er
-        måske udskrevet fra hospitalet og har svært ved at opretholde den hverdag du kunne tænke dig. Du tager ikke
-        bussen, haven gror til, eller lysten til at lave mad svinder ind. Du kan også have svære ved at holde huset
-        rent, gå i bad eller tage tøj på.
-      </p>
-      <p class="mt-3">
-        Dine pårørende bor langt væk og har en travl hverdag, men du har brug for hjælp til små ting i hverdagen.
-      </p>
-      <p class="mt-3">
-        Du er måske allerede begyndt at få hjælp fra kommunen, eller har brug for at søge offentlige ydelser, men
-        det
-        virker uoverskueligt at forstå reglerne.
-      </p>
-      <p class="mt-3">
-        Du har mange lægebesøg, og er afhængig af hjælp fra andre til at komme frem og tilbage.
-      </p>
-      <p class="mt-3">
-        Jeg tilbyder støtte, hjælp og vejledning hvor du har brug for det. Læs mere under ydelser.
-      </p>
-      <p class="text-end pe-3">
-        <button class="btn btn-primary" routerLink="/services">Læs mere her</button>
-      </p>
-    </div>
-  </app-card>
-
-  <app-card title="Baggrunden for ErgoPlus" ngClasses="bg-app-green-100 my-3 mx-3 mx-md-0">
+  <app-card title="Din nærmeste har brug for hjælp" ngClasses="bg-app-blue-100 mt-3 mx-3 mx-md-0">
     <div col-1>
       <p>
-        Efter mange år i primærsektoren oplever jeg et behov for privat ergoterapi. Vi er alle unikke med helt
-        særlige behov, som er vigtige at få opfyldt for at livet giver mening.
+        Din nærmeste har svært ved at få handlet, vasket tøj, gå i bad og har måske mange lægeaftaler eller aftaler med
+        kommunen.
       </p>
       <p class="mt-3">
-        Jeg oplever, at det er svært at få disse ønsker opfyldt, når man er blevet afhængige af hjælp fra andre. Men
-        hvorfor ikke forebygge afhængighed af hjælp fra andre?
-      </p>
-      <p class="mt-3">
-        Jeg vil gerne bruge mine kompetencer med klienter uden at de er styret af tidsregistrering og kommunale
-        serviceniveau.
-      </p>
-      <p class="mt-3">
-        Jeg vil gerne tage udgangspunkt i den enkelte og tilpasse den ønskede hjælp i form af træning, behandling og
-        praktisk hjælp til selvhjælp i eget hjem, så mine klienter kan få det bedst mulige liv.
+        Jeg tilbyder træning i de daglige aktiviteter, hvor jeg afprøver aktiviteterne. Jeg tilbyder også følgeskab til
+        læge og møder med kommunen.
       </p>
     </div>
     <div col-2>
-      <img src="assets/images/home/lene.png" class="w-50" alt="Billede af Ergoterapeut Lene" />
+      <img src="assets/illustrations/services/elderly-people-professional_04.png" alt="Illustration" />
     </div>
   </app-card>
--->
 
-  <!--  Nyt layout-->
-  <div
-    class="d-flex flex-column flex-lg-row justify-content-between rounded-4 mx-3 mx-md-0 mb-3 p-3 gap-3 bg-app-green-100">
-    <app-card title="Ergoterapi" ngClasses="bg-app-blue-100 h-100">
-      <p>
-        Ergoterapi har fokus på de enkelte menneskes muligheder for at udføre dagligdags aktiviteter.
-      </p>
-      <div class="text-end pe-3">
-        <button class="btn btn-primary" routerLink="/services">Læs mere her</button>
-      </div>
-    </app-card>
-
-    <app-card title="Ydelser" ngClasses="bg-app-green-100 h-100">
-      <p>
-        Læs mere om vores priser
-      </p>
-      <div class=" text-end pe-3">
-        <button class="btn btn-primary" routerLink="/ergotherapy">Læs mere her</button>
-      </div>
-    </app-card>
-
-    <app-card title="Priser" ngClasses="bg-app-blue-100 h-100">
-      <p>
-        Læs mere om vores priser
-      </p>
-      <div class=" text-end pe-3">
-        <button class="btn btn-primary" routerLink="/prices">Læs mere her</button>
-      </div>
-    </app-card>
-  </div>
-
-  <app-card title="Baggrunden for ErgoPlus" ngClasses="bg-app-blue-100 my-3 mx-3 mx-md-0">
+  <app-card title="Du skal hjem fra hospital" ngClasses="bg-app-green-100 mt-3 mx-3 mx-md-0">
     <div col-1>
       <p>
-        Efter mange år i primærsektoren oplever jeg et behov for privat ergoterapi. Vi er alle unikke med helt
-        særlige behov, som er vigtige at få opfyldt for at livet giver mening.
-      </p>
+        Du skal udskrives efter længere tids indlæggelse. Din genoptræning er måske slut, og du er bekymret for hvordan
+        det skal gå. </p>
       <p class="mt-3">
-        Jeg oplever, at det er svært at få disse ønsker opfyldt, når man er blevet afhængige af hjælp fra andre. Men
-        hvorfor ikke forebygge afhængighed af hjælp fra andre?
-      </p>
-      <p class="mt-3">
-        Jeg vil gerne bruge mine kompetencer med klienter uden at de er styret af tidsregistrering og kommunale
-        serviceniveau.
-      </p>
-      <p class="mt-3">
-        Jeg vil gerne tage udgangspunkt i den enkelte og tilpasse den ønskede hjælp i form af træning, behandling og
-        praktisk hjælp til selvhjælp i eget hjem, så mine klienter kan få det bedst mulige liv.
+        Jeg kan gøre din udskrivelse mere tryg, ved at besøge dig på hospitalet, og komme hjem til dig ved udskrivelse.
+        Med mig kan du afprøve bad og indkøb. Jeg tilbyder vedligeholdende træning for at du bedst muligt kan bibeholde
+        dét, du har opnået.
       </p>
     </div>
     <div col-2>
-      <img src="assets/images/home/lene.png" class="w-50" alt="Billede af Ergoterapeut Lene" />
+      <img src="assets/illustrations/services/doctor-patient_06.png" alt="Illustration" />
     </div>
   </app-card>
 
+  <app-card title="Du bor på plejehjem" ngClasses="bg-app-blue-100 mt-3 mx-3 mx-md-0">
+    <div col-1>
+      <p>
+        Dagene kan være lange og du savner aktivitet, der interesserer dig. Du modtager måske lidt træning via kommunen,
+        men vil gerne træne oftere.
+      </p>
+      <p class="mt-3">
+        Jeg tilbyder ergoterapi med fokus på at lave aktiviteter, som du kan lide. Med din tilladelse kan jeg kontakte
+        din fysioterapeut, så træningen koordineres.
+      </p>
+    </div>
+    <div col-2>
+      <img src="assets/illustrations/services/volunteers-helping-elderly_09.png" alt="Illustration" />
+    </div>
+  </app-card>
+
+  <app-card title="Din ægtefælle er blevet syg" ngClasses="bg-app-green-100 my-3 mx-3 mx-md-0">
+    <div col-1>
+      <p>
+        Din ægtefælle har brug for hjemmepleje flere gange om dagen, og det er hårdt for jer begge. Der er mange ting at
+        holde styr på.
+      </p>
+      <p class="mt-3">
+        Jeg tilbyder hjælp til de praktiske gøremål, og har fokus på at inddrage dig og din ægtefælle. Jeg kan hjælpe
+        med ansøgninger indenfor Serviceloven.
+      </p>
+    </div>
+    <div col-2>
+      <img src="assets/illustrations/services/seniors-with-life-insurance.png" alt="Illustration" />
+    </div>
+  </app-card>
 </app-page>
+
