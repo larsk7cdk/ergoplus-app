@@ -1,8 +1,6 @@
 <app-page>
   <!-- Konsultation -->
-  <app-card title="Konsultation" ngClasses="bg-app-green-100 mx-3 mx-md-0">
-    <p>Der tilbydes uforpligtende samtale pr. telefon, ca. 30 minutter</p>
-
+  <app-card title="Konsultation ved hjemmebesøg" ngClasses="bg-app-green-100 mx-3 mx-md-0">
     <p>Der udføres dokumentation i forbindelse med hver kontakt og alt dokumentation opbevares efter gældende regler og
       lovgivning.</p>
 
@@ -14,28 +12,27 @@
         *ngTemplateOutlet="priceItemTemplate; context: { text: 'Klippekort á 5 timer', price: '3500,-'}">
       </div>
       <div
-        *ngTemplateOutlet="priceItemTemplate; context: { text: 'Klippekort á 10 timer', price: '6500,-', textcolor: 'text-black-50'}">
-      </div>
-      <div
-        *ngTemplateOutlet="priceItemTemplate; context: { text: 'Opstartssamtale, ergoterapeutisk funktionsvurdering/undersøgelse og målsætning (kan tage op til 90 min og kan være over 2 besøg)', price: '1300,-'}">
+        *ngTemplateOutlet="priceItemTemplate; context: { text: 'Opstartssamtale, ergoterapeutisk funktionsvurdering/undersøgelse og målsætning (kan tage op til 90 min. og kan være over 2 besøg)', price: '1300,-'}">
       </div>
       <div
         *ngTemplateOutlet="priceItemTemplate; context: { text: 'Følgeskab til lægesamtale eller hospital. Der udføres referat af samtale. Timepris', price: '500,- + moms,-', textcolor: 'text-black-50'}">
       </div>
     </div>
-    <p><i>Priserne er inklusiv lønsum</i></p>
+    <br>
+    <p class="text-black-50"><i>Priserne er inklusiv lønsum</i></p>
   </app-card>
 
   <!-- Kørsel -->
   <app-card title="Kørsel" ngClasses="bg-app-blue-100 mt-3 mx-3 mx-md-0">
     <div class="d-flex flex-column mb-2">
       <div
-        *ngTemplateOutlet="priceItemTemplate; context: { text: 'Første halve time', price: 'gratis', textcolor: 'text-black-50'}">
+        *ngTemplateOutlet="priceItemTemplate; context: { text: 'Kørsel pr. km fra Hvidovre*', price: '3.79,-'}">
       </div>
-      <div
-        *ngTemplateOutlet="priceItemTemplate; context: { text: 'Takst pr. påbegyndt halve time', price: '200,-'}">
-      </div>
+      <!--      <div-->
+      <!--        *ngTemplateOutlet="priceItemTemplate; context: { text: 'Takst pr. påbegyndt halve time', price: '200,-'}">-->
+      <!--      </div>-->
     </div>
+    <p class="text-black-50"><i>* Justeres årligt i henhold til statens gældende takster for kørsel</i></p>
   </app-card>
 
   <!-- Aflysning -->
