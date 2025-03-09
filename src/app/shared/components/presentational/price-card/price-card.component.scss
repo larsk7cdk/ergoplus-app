@@ -1,0 +1,15 @@
+@import "../../../../../styles";
+
+.card {
+  width: 100%;
+}
+
+.card-header {
+  background: $app-beige;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-body {
+}

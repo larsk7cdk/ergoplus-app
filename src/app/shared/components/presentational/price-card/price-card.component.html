@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-header">
+    <h3 class="text-app-blue">{{ title() }}</h3>
+    <h6 class="mt-2">{{ price() }}</h6>
+  </div>
+  <div class="card-body bg-app-blue-100">
+    @for (feature of features(); track features) {
+      <div class="d-flex">
+        <i class="bi bi-check-lg me-2"></i>
+        <span>
+        {{ feature }}
+          </span>
+      </div>
+    }
+  </div>
+</div>
+
