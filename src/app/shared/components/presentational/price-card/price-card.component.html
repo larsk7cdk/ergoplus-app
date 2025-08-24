@@ -4,7 +4,7 @@
     <h6 class="mt-2">{{ price() }}</h6>
   </div>
   <div class="card-body bg-app-blue-100">
-    @for (feature of features(); track features()) {
+    @for (feature of features(); track $index) {
       <div class="d-flex">
         <i class="bi bi-check-lg me-2"></i>
         <span>
