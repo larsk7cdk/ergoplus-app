@@ -7,11 +7,10 @@ import { CardComponent } from '../../shared/components/presentational/card/card.
 import { PriceCardComponent } from '../../shared/components/presentational/price-card/price-card.component';
 
 @Component({
-  selector: 'app-prices',
-  standalone: true,
-  imports: [PageComponent, NgTemplateOutlet, NgClass, CardComponent, PriceCardComponent],
-  templateUrl: './prices.component.html',
-  styleUrl: './prices.component.scss'
+    selector: 'app-prices',
+    imports: [PageComponent, CardComponent, PriceCardComponent],
+    templateUrl: './prices.component.html',
+    styleUrl: './prices.component.scss'
 })
 export class PricesComponent implements OnInit {
   protected activatedRoute = inject(ActivatedRoute);

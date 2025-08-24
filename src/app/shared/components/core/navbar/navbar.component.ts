@@ -3,12 +3,11 @@ import { NgClass, NgOptimizedImage } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'app-navbar',
-  standalone: true,
-  imports: [NgClass, RouterLink, RouterLinkActive, NgOptimizedImage],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-navbar',
+    imports: [NgClass, RouterLink, RouterLinkActive],
+    templateUrl: './navbar.component.html',
+    styleUrl: './navbar.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NavbarComponent {
   navbarOpen = false;
