@@ -1,9 +1,11 @@
 import {
   AfterViewInit,
   ChangeDetectionStrategy,
-  Component, ElementRef,
+  Component,
+  ElementRef,
   inject,
-  OnInit, ViewChild
+  OnInit,
+  ViewChild,
 } from '@angular/core';
 import { PageComponent } from '../../shared/components/core/page/page.component';
 import { HeaderService } from '../../shared/components/core/header/header.service';
@@ -13,11 +15,10 @@ import Player from '@vimeo/player';
 
 @Component({
   selector: 'app-ergotherapy',
-  standalone: true,
-  imports: [PageComponent, RouterLink, CardComponent],
+  imports: [PageComponent, CardComponent],
   templateUrl: './ergotherapy.component.html',
   styleUrl: './ergotherapy.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ErgotherapyComponent implements OnInit, AfterViewInit {
   @ViewChild('playerContainer') playerContainer: ElementRef;
@@ -35,6 +36,9 @@ export class ErgotherapyComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    new Player(this.playerContainer.nativeElement, { url: this.url, width: 280 });
+    new Player(this.playerContainer.nativeElement, {
+      url: this.url,
+      width: 280,
+    });
   }
 }

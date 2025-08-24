@@ -2,7 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   inject,
-  OnInit
+  OnInit,
 } from '@angular/core';
 import { PageComponent } from '../../shared/components/core/page/page.component';
 import { HeaderService } from '../../shared/components/core/header/header.service';
@@ -11,14 +11,12 @@ import { CardComponent } from '../../shared/components/presentational/card/card.
 
 @Component({
   selector: 'app-home',
-  standalone: true,
-  imports: [PageComponent, RouterLink, CardComponent],
+  imports: [PageComponent, CardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent implements OnInit {
-
   protected activatedRoute = inject(ActivatedRoute);
   protected headerService = inject(HeaderService);
 

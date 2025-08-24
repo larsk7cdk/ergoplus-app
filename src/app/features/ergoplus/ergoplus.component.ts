@@ -10,12 +10,11 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { CardComponent } from '../../shared/components/presentational/card/card.component';
 
 @Component({
-  selector: 'app-ergotherapy',
-  standalone: true,
-  imports: [PageComponent, RouterLink, CardComponent],
-  templateUrl: './ergoplus.component.html',
-  styleUrl: './ergoplus.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-ergotherapy',
+    imports: [PageComponent, CardComponent],
+    templateUrl: './ergoplus.component.html',
+    styleUrl: './ergoplus.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ErgoplusComponent implements OnInit {
   protected activatedRoute = inject(ActivatedRoute);

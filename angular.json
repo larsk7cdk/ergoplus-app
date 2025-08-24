@@ -41,7 +41,12 @@
             ],
             "server": "src/main.server.ts",
             "prerender": false,
-            "ssr": false
+            "ssr": false,
+            "stylePreprocessorOptions": {
+              "sass": {
+                "silenceDeprecations": ["color-functions", "global-builtin", "import", "mixed-decls"]
+              }
+            }
           },
           "configurations": {
             "production": {
