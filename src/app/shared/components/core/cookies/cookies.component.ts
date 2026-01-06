@@ -1,18 +1,25 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { DynamicDialogConfig, DynamicDialogRef } from 'primeng/dynamicdialog';
+import {
+  MatDialogActions,
+  MatDialogClose,
+  MatDialogContent,
+  MatDialogTitle,
+} from '@angular/material/dialog';
+import { MatButton } from '@angular/material/button';
+import { MatSlideToggle } from '@angular/material/slide-toggle';
 
 @Component({
   selector: 'app-cookies',
-  imports: [],
+  imports: [
+    MatDialogActions,
+    MatDialogClose,
+    MatButton,
+    MatDialogContent,
+    MatDialogTitle,
+    MatSlideToggle,
+  ],
   templateUrl: './cookies.component.html',
   styleUrl: './cookies.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CookiesComponent {
-  constructor(
-    public ref: DynamicDialogRef,
-    public config: DynamicDialogConfig
-  ) { }
-
-  ngOnInit() { }
-}
+export class CookiesComponent {}

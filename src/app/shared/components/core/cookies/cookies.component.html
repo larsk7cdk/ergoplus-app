@@ -1,1 +1,19 @@
-<h3>Cookies dialog</h3>
+<h1 mat-dialog-title>Cookie politik</h1>
+<div mat-dialog-content>
+  Her indskriver vi vores cookie politik
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+    <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+
+
+    <p><mat-slide-toggle>Slide me!</mat-slide-toggle></p>
+    <p><mat-slide-toggle labelPosition="before">...and slide me too!</mat-slide-toggle></p>
+  </div>
+
+</div>
+<hr>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Annuller</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>OK</button>
+</div>
