@@ -13,6 +13,6 @@ import { NgcCookieConsentService } from 'ngx-cookieconsent';
 })
 export class AppComponent {
 
-  constructor(private ccService: NgcCookieConsentService) {
-  }
+  // constructor(private ccService: NgcCookieConsentService) {
+  // }
 }
