@@ -1,46 +1,57 @@
 <app-page>
-    <app-card ngClasses="bg-app-green-100 mx-3 mx-md-0">
-      <div class="d-flex justify-content-around flex-column flex-lg-row">
-        <div class="col-lg-3 flex-row my-3 my-lg-0">
-          <app-price-card
-            [title]="'Opstartsbesøg'"
-            [price]="'1300,- + kilometertakst*'"
-            [features]="[
+  <app-card ngClasses="bg-app-green-100 mx-3 mx-md-0 mb-3">
+    <div class="d-flex justify-content-around flex-column flex-lg-row">
+      <div class="col-lg-3 flex-row my-3 my-lg-0">
+        <app-price-card
+          [title]="'Opstartsbesøg'"
+          [price]="'1300,- + kilometertakst*'"
+          [features]="[
         '60-90 minutter hjemmebesøg',
         'Interview og ergoterapeutisk funktionsvurdering',
         '30 minutters kørsel',
         'Dokumentation i journalsystem (lovpligtigt)',
         'Telefonisk opfølgning eller besked via journalsystem']">
-          </app-price-card>
-        </div>
-
-        <div class="col-lg-3 flex-row my-3 my-lg-0">
-          <app-price-card
-            [title]="'1 besøg'"
-            [price]="'950,- + kilometertakst*'"
-            [features]="[
-        '60 minutter hjemmebesøg',
-        'Ergoterapeutisk træning og vejledning',
-        '30 minutters kørsel',
-        'Dokumentation i journalsystem (lovpligtigt)',
-        'Telefonisk opfølgning eller besked via journalsystem']">
-          </app-price-card>
-        </div>
-
-        <div class="col-lg-3 flex-row my-3 my-lg-0">
-          <app-price-card
-            [title]="'3 besøg'"
-            [price]="'2700,- + kilometertakst*'"
-            [features]="[
-        '60 minutter hjemmebesøg',
-        'Ergoterapeutisk træning og vejledning',
-        '30 minutters kørsel',
-        'Dokumentation i journalsystem (lovpligtigt)',
-        'Telefonisk opfølgning eller besked via journalsystem']">
-          </app-price-card>
-        </div>
+        </app-price-card>
       </div>
 
-      <p class="mt-3 text-black-50"><i>* Kilometertakst afregnes fra Hvidovre   i henhold til statens gældende takster for kørsel</i></p>
-    </app-card>
+      <div class="col-lg-3 flex-row my-3 my-lg-0">
+        <app-price-card
+          [title]="'1 besøg'"
+          [price]="'950,- + kilometertakst*'"
+          [features]="[
+        '60 minutter hjemmebesøg',
+        'Ergoterapeutisk træning og vejledning',
+        '30 minutters kørsel',
+        'Dokumentation i journalsystem (lovpligtigt)',
+        'Telefonisk opfølgning eller besked via journalsystem']">
+        </app-price-card>
+      </div>
+
+      <div class="col-lg-3 flex-row my-3 my-lg-0">
+        <app-price-card
+          [title]="'3 besøg'"
+          [price]="'2700,- + kilometertakst*'"
+          [features]="[
+        '60 minutter hjemmebesøg',
+        'Ergoterapeutisk træning og vejledning',
+        '30 minutters kørsel',
+        'Dokumentation i journalsystem (lovpligtigt)',
+        'Telefonisk opfølgning eller besked via journalsystem']">
+        </app-price-card>
+      </div>
+    </div>
+
+    <p class="mt-3 text-black-50"><i>* Kilometertakst afregnes fra Hvidovre i henhold til statens gældende takster for
+      kørsel</i></p>
+
+    <div class="mt-4">
+      <h5>Afbud eller udeblivelse</h5>
+      <p class="mt-1">
+        Ved sygdom bedes du kontakte ErgoPlus på <strong class="text-app-blue">42556911</strong> hurtigst muligt. Ved
+        aflysning senere end 24 timer før den aftalte tid
+        opkræves et afbudsgebyr på 500,00 kr. Sker aflysningen efter kl. 09:00 på selve dagen, opkræves den fulde pris.
+        Ved udeblivelse uden afbud tillægges desuden udgifter til transport.
+      </p>
+    </div>
+  </app-card>
 </app-page>
