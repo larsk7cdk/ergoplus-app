@@ -1,7 +1,10 @@
 @import "../../../../../styles";
 
 .hero {
-  background-color: $app-beige;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 85% 15%, $app-blue-100 0%, transparent 55%),
+    linear-gradient(135deg, $app-beige-200 0%, $app-beige 45%, $app-beige-300 100%);
   padding: 100px 0 40px;
   margin-bottom: 40px;
 
@@ -32,6 +35,14 @@
 .hero-image {
   width: 100%;
   max-width: 320px;
+}
+
+.hero-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
 }
 
 .hero-placeholder {

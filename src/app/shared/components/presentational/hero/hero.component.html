@@ -12,10 +12,21 @@
     </div>
 
     <div class="hero-image">
-      <div class="hero-placeholder rounded-4">
-        <i class="bi" [class]="icon"></i>
-        <span>{{ placeholderText }}</span>
-      </div>
+      @if (imageSrc) {
+        <img
+          [ngSrc]="imageSrc"
+          [alt]="imageAlt"
+          [width]="imageWidth"
+          [height]="imageHeight"
+          priority
+          class="hero-photo rounded-4"
+        />
+      } @else {
+        <div class="hero-placeholder rounded-4">
+          <i class="bi" [class]="icon"></i>
+          <span>{{ placeholderText }}</span>
+        </div>
+      }
     </div>
   </div>
 </section>

@@ -1,9 +1,10 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-hero',
-  imports: [RouterLink],
+  imports: [RouterLink, NgOptimizedImage],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -26,4 +27,16 @@ export class HeroComponent {
 
   @Input()
   placeholderText: string = 'Foto kommer snart';
+
+  @Input()
+  imageSrc?: string;
+
+  @Input()
+  imageAlt: string = '';
+
+  @Input()
+  imageWidth: number = 560;
+
+  @Input()
+  imageHeight: number = 725;
 }
