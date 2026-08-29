@@ -59,16 +59,3 @@
     }
   </div>
 </app-page>
-
-<section class="testimonials bg-app-beige-100">
-  <div class="container testimonials-grid">
-    @for (testimonial of testimonials; track $index) {
-      <div class="testimonial">
-        <i class="bi bi-quote"></i>
-        <p class="testimonial-quote">{{ testimonial.quote }}</p>
-        <p class="testimonial-author">{{ testimonial.author }}</p>
-        <p class="testimonial-role">{{ testimonial.role }}</p>
-      </div>
-    }
-  </div>
-</section>

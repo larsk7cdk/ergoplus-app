@@ -13,7 +13,6 @@ import { PageComponent } from '../../shared/components/core/page/page.component'
 import { HeaderService } from '../../shared/components/core/header/header.service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { SITUATIONS } from './situation.model';
-import { TESTIMONIALS } from './testimonial.model';
 
 @Component({
   selector: 'app-privat',
@@ -26,7 +25,6 @@ export class PrivatComponent implements OnInit, AfterViewInit, OnDestroy {
   protected activatedRoute = inject(ActivatedRoute);
   protected headerService = inject(HeaderService);
   protected readonly situations = SITUATIONS;
-  protected readonly testimonials = TESTIMONIALS;
 
   @ViewChild('featureImage') featureImage?: ElementRef<HTMLElement>;
 

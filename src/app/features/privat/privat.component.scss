@@ -96,6 +96,7 @@
   align-items: center;
   gap: 30px;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .situation-card {
@@ -130,41 +131,6 @@
   }
 }
 
-// Testimonials
-.testimonials {
-  padding: 40px 0;
-  margin-top: 40px;
-}
-
-.testimonials-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.testimonial {
-  i {
-    font-size: 1.5rem;
-    color: $app-blue-300;
-  }
-}
-
-.testimonial-quote {
-  font-style: italic;
-  margin-top: 10px;
-}
-
-.testimonial-author {
-  margin-top: 15px;
-  font-weight: bold;
-  color: $app-blue;
-}
-
-.testimonial-role {
-  margin-top: 2px;
-  font-size: 0.9rem;
-}
-
 @include media-breakpoint-up(md) {
   .situation-grid {
     flex-direction: row;
@@ -191,13 +157,5 @@
 
   .situation-card {
     width: calc(33.333% - 20px);
-  }
-
-  .testimonials-grid {
-    flex-direction: row;
-  }
-
-  .testimonial {
-    width: 50%;
   }
 }
