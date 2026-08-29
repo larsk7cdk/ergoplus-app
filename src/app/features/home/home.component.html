@@ -28,7 +28,9 @@
     @for (card of audienceCards; track card.title) {
       <div class="audience-card">
         @if (card.image) {
-          <img [src]="card.image" [alt]="card.title" class="audience-card-image rounded-4" />
+          <div class="audience-card-image rounded-4">
+            <img [ngSrc]="card.image" [alt]="card.title" fill />
+          </div>
         } @else {
           <div class="audience-card-image audience-card-placeholder rounded-4">
             <i class="bi bi-building"></i>
@@ -68,7 +70,13 @@
     </div>
 
     <div class="bio-image" #bioImage>
-      <img src="assets/images/home/LeneErgoPlus.jpg" class="rounded-4" alt="Billede af Ergoterapeut Lene" />
+      <img
+        ngSrc="assets/images/home/LeneErgoPlus.jpg"
+        width="600"
+        height="800"
+        class="rounded-4"
+        alt="Billede af Ergoterapeut Lene"
+      />
     </div>
   </div>
 

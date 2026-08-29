@@ -4,7 +4,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
     selector: 'app-navbar',
-    imports: [NgClass, RouterLink, RouterLinkActive],
+    imports: [NgClass, RouterLink, RouterLinkActive, NgOptimizedImage],
     templateUrl: './navbar.component.html',
     styleUrl: './navbar.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush

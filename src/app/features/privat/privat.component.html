@@ -12,7 +12,12 @@
         }
       </div>
       <div col-2>
-        <img [src]="situation.image" [alt]="situation.alt" />
+        <img
+          [ngSrc]="situation.image"
+          [width]="situation.imageWidth"
+          [height]="situation.imageHeight"
+          [alt]="situation.alt"
+        />
       </div>
     </app-card>
   }

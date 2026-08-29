@@ -3,6 +3,8 @@ export type Situation = {
   background: string;
   paragraphs: string[];
   image: string;
+  imageWidth: number;
+  imageHeight: number;
   alt: string;
 };
 
@@ -15,6 +17,8 @@ export const SITUATIONS: Situation[] = [
       'Jeg tilbyder hjælp til at afprøve hjælpemidler, og sammen med dig lave en plan for, hvordan du kan træne i det, der er vigtigst for dig.',
     ],
     image: 'assets/illustrations/services/elderly-people-professional_07.png',
+    imageWidth: 200,
+    imageHeight: 253,
     alt: 'Illustration',
   },
   {
@@ -25,6 +29,8 @@ export const SITUATIONS: Situation[] = [
       'Jeg tilbyder træning i de daglige aktiviteter, hvor jeg afprøver aktiviteterne. Jeg tilbyder også følgeskab til læge og møder med kommunen.',
     ],
     image: 'assets/illustrations/services/elderly-people-professional_04.png',
+    imageWidth: 149,
+    imageHeight: 217,
     alt: 'Illustration',
   },
   {
@@ -35,6 +41,8 @@ export const SITUATIONS: Situation[] = [
       'Jeg kan gøre din udskrivelse mere tryg, ved at besøge dig på hospitalet, og komme hjem til dig ved udskrivelse. Med mig kan du afprøve bad og indkøb. Jeg tilbyder vedligeholdende træning for at du bedst muligt kan bibeholde dét, du har opnået.',
     ],
     image: 'assets/illustrations/services/doctor-patient_06.png',
+    imageWidth: 100,
+    imageHeight: 95,
     alt: 'Illustration',
   },
   {
@@ -45,6 +53,8 @@ export const SITUATIONS: Situation[] = [
       'Jeg tilbyder ergoterapi med fokus på at lave aktiviteter, som du kan lide. Med din tilladelse kan jeg kontakte din fysioterapeut, så træningen koordineres.',
     ],
     image: 'assets/illustrations/services/volunteers-helping-elderly_09.png',
+    imageWidth: 168,
+    imageHeight: 141,
     alt: 'Illustration',
   },
   {
@@ -55,6 +65,8 @@ export const SITUATIONS: Situation[] = [
       'Jeg tilbyder hjælp til de praktiske gøremål, og har fokus på at inddrage dig og din ægtefælle. Jeg kan hjælpe med ansøgninger indenfor Serviceloven.',
     ],
     image: 'assets/illustrations/services/seniors-with-life-insurance.png',
+    imageWidth: 472,
+    imageHeight: 420,
     alt: 'Illustration',
   },
 ];

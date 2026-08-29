@@ -4,6 +4,7 @@ import {
   inject,
   OnInit,
 } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { PageComponent } from '../../shared/components/core/page/page.component';
 import { HeaderService } from '../../shared/components/core/header/header.service';
 import { ActivatedRoute } from '@angular/router';
@@ -12,7 +13,7 @@ import { SITUATIONS } from './situation.model';
 
 @Component({
   selector: 'app-privat',
-  imports: [PageComponent, CardComponent],
+  imports: [PageComponent, CardComponent, NgOptimizedImage],
   templateUrl: './privat.component.html',
   styleUrl: './privat.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
