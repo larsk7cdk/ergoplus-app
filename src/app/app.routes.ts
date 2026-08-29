@@ -9,6 +9,20 @@ export const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'privat',
+    title: 'Privat',
+    data: { title: 'Privat' },
+    loadComponent: () => import('./features/privat/privat.component')
+      .then(m => m.PrivatComponent)
+  },
+  {
+    path: 'erhverv',
+    title: 'Erhverv',
+    data: { title: 'Erhverv' },
+    loadComponent: () => import('./features/erhverv/erhverv.component')
+      .then(m => m.ErhvervComponent)
+  },
+  {
     path: 'ergoterapi',
     title: 'Ergoterapi',
     data: { title: 'Ergoterapi' },
@@ -21,13 +35,6 @@ export const routes: Routes = [
     data: { title: 'Priser' },
     loadComponent: () => import('./features/prices/prices.component')
       .then(m => m.PricesComponent)
-  },
-  {
-    path: 'omergoplus',
-    title: 'Om ErgoPlus',
-    data: { title: 'Om ErgoPlus' },
-    loadComponent: () => import('./features/ergoplus/ergoplus.component')
-      .then(m => m.ErgoplusComponent)
   },
   { path: '**', redirectTo: 'forside', pathMatch: 'full' }
 ];

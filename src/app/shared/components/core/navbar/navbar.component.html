@@ -27,6 +27,24 @@
         <li class="nav-item">
           <a
             class="nav-link"
+            routerLink="/privat"
+            routerLinkActive="active"
+            (click)="closeNavBar()"
+          >PRIVAT</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/erhverv"
+            routerLinkActive="active"
+            (click)="closeNavBar()"
+          >ERHVERV</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
             routerLink="/ergoterapi"
             routerLinkActive="active"
             (click)="closeNavBar()"
@@ -41,16 +59,6 @@
             (click)="closeNavBar()"
           >
             PRISER</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/omergoplus"
-            routerLinkActive="active"
-            (click)="closeNavBar()"
-          >
-            OM ERGOPLUS</a
           >
         </li>
       </ul>
