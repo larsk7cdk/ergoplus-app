@@ -1,29 +1,61 @@
 import {
+  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
-  inject,
+  ElementRef,
+  OnDestroy,
   OnInit,
+  ViewChild,
+  inject,
 } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
+import { NgClass, NgOptimizedImage } from '@angular/common';
 import { PageComponent } from '../../shared/components/core/page/page.component';
 import { HeaderService } from '../../shared/components/core/header/header.service';
-import { ActivatedRoute } from '@angular/router';
-import { CardComponent } from '../../shared/components/presentational/card/card.component';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { SITUATIONS } from './situation.model';
+import { TESTIMONIALS } from './testimonial.model';
 
 @Component({
   selector: 'app-privat',
-  imports: [PageComponent, CardComponent, NgOptimizedImage],
+  imports: [PageComponent, NgClass, NgOptimizedImage, RouterLink],
   templateUrl: './privat.component.html',
   styleUrl: './privat.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PrivatComponent implements OnInit {
+export class PrivatComponent implements OnInit, AfterViewInit, OnDestroy {
   protected activatedRoute = inject(ActivatedRoute);
   protected headerService = inject(HeaderService);
   protected readonly situations = SITUATIONS;
+  protected readonly testimonials = TESTIMONIALS;
+
+  @ViewChild('featureImage') featureImage?: ElementRef<HTMLElement>;
+
+  private featureImageObserver?: IntersectionObserver;
 
   ngOnInit(): void {
     this.headerService.setTitle(this.activatedRoute.snapshot.data['title']);
+  }
+
+  ngAfterViewInit(): void {
+    const element = this.featureImage?.nativeElement;
+
+    if (!element) {
+      return;
+    }
+
+    this.featureImageObserver = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          element.classList.add('in-view');
+          this.featureImageObserver?.disconnect();
+        }
+      }
+    }, { threshold: 0.3 });
+
+    this.featureImageObserver.observe(element);
+  }
+
+  ngOnDestroy(): void {
+    this.featureImageObserver?.disconnect();
   }
 }

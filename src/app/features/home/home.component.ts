@@ -10,13 +10,14 @@ import {
 } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { PageComponent } from '../../shared/components/core/page/page.component';
+import { HeroComponent } from '../../shared/components/presentational/hero/hero.component';
 import { HeaderService } from '../../shared/components/core/header/header.service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { AUDIENCE_CARDS } from './audience.model';
 
 @Component({
   selector: 'app-home',
-  imports: [PageComponent, RouterLink, NgOptimizedImage],
+  imports: [PageComponent, HeroComponent, RouterLink, NgOptimizedImage],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
