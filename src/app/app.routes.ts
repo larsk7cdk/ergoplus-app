@@ -12,15 +12,15 @@ export const routes: Routes = [
     path: 'privat',
     title: 'Privat',
     data: { title: 'Privat' },
-    loadComponent: () => import('./features/privat/privat.component')
+    loadComponent: () => import('./features/private/private.component')
       .then(m => m.PrivatComponent)
   },
   {
     path: 'erhverv',
     title: 'Erhverv',
     data: { title: 'Erhverv' },
-    loadComponent: () => import('./features/erhverv/erhverv.component')
-      .then(m => m.ErhvervComponent)
+    loadComponent: () => import('./features/business/business.component')
+      .then(m => m.BusinessComponent)
   },
   {
     path: 'ergoterapi',

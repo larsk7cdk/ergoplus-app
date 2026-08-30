@@ -9,13 +9,13 @@ import { HeaderService } from '../../shared/components/core/header/header.servic
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-erhverv',
+  selector: 'app-business',
   imports: [PageComponent],
-  templateUrl: './erhverv.component.html',
-  styleUrl: './erhverv.component.scss',
+  templateUrl: './business.component.html',
+  styleUrls: ['./business.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ErhvervComponent implements OnInit {
+export class BusinessComponent implements OnInit {
   protected activatedRoute = inject(ActivatedRoute);
   protected headerService = inject(HeaderService);
 
