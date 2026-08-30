@@ -19,8 +19,8 @@ export const routes: Routes = [
     path: 'erhverv',
     title: 'Erhverv',
     data: { title: 'Erhverv' },
-    loadComponent: () => import('./features/erhverv/erhverv.component')
-      .then(m => m.ErhvervComponent)
+    loadComponent: () => import('./features/business/business.component')
+      .then(m => m.BusinessComponent)
   },
   {
     path: 'ergoterapi',
