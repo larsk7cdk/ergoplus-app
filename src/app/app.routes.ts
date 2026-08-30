@@ -13,7 +13,7 @@ export const routes: Routes = [
     title: 'Privat',
     data: { title: 'Privat' },
     loadComponent: () => import('./features/private/private.component')
-      .then(m => m.PrivatComponent)
+      .then(m => m.PrivateComponent)
   },
   {
     path: 'erhverv',
