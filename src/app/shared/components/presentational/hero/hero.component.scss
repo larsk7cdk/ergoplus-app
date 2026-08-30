@@ -30,6 +30,20 @@
   h1 {
     font-style: italic;
   }
+
+  .lead {
+    white-space: pre-line;
+  }
+
+  .btn-primary {
+    background-color: transparent !important;
+    border-color: $app-blue;
+    color: $app-blue;
+
+    &:hover {
+      background-color: $app-blue-100 !important;
+    }
+  }
 }
 
 .hero-image {
