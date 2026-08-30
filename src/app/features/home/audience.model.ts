@@ -11,11 +11,13 @@ export const AUDIENCE_CARDS: AudienceCard[] = [
     description:
       'Hjælp til dig og dine nærmeste i hverdagen – uanset om det er efter sygdom, indlæggelse, eller når kræfterne svigter.',
     link: '/privat',
+    image: 'assets/illustrations/home/forside_privat.jpg',
   },
   {
     title: 'Erhverv',
     description:
       'Ergoterapeutisk rådgivning og indsatser målrettet virksomheder og arbejdspladser.',
     link: '/erhverv',
+    image: 'assets/illustrations/home/forside_erhverv.jpg',
   },
 ];
