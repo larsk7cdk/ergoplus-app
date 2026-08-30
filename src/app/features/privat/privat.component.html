@@ -23,24 +23,18 @@
     </div>
 
     <div class="feature-image" #featureImage>
-      <div class="feature-placeholder rounded-4">
-        <i class="bi bi-house-heart"></i>
-        <span>Foto kommer snart</span>
-      </div>
+      <img
+        ngSrc="assets/illustrations/private/privat_hjaelp.jpg"
+        width="1536"
+        height="1024"
+        class="rounded-4"
+        alt="Ergoterapeut der hjælper en klient i hjemmet"
+      />
     </div>
   </div>
 </section>
 
 <app-page [compact]="true">
-  <section class="situations-intro text-center">
-    <h2>Hvem kan jeg hjælpe?</h2>
-    <p class="lead mx-auto">
-      Herunder er eksempler på situationer, hvor jeg kan hjælpe dig eller din nærmeste. Kontakt mig, hvis du er i
-      tvivl om, hvad der passer til jeres situation.
-    </p>
-    <a href="mailto:kontakt@ergoplus.dk" class="btn btn-primary rounded-pill">Kontakt mig</a>
-  </section>
-
   <div class="situation-grid">
     @for (situation of situations; track situation.title) {
       <div class="situation-card rounded-4" [ngClass]="situation.background">
