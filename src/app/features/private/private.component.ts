@@ -15,13 +15,13 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { SITUATIONS } from './situation.model';
 
 @Component({
-  selector: 'app-privat',
+  selector: 'app-private',
   imports: [PageComponent, NgClass, NgOptimizedImage, RouterLink],
-  templateUrl: './privat.component.html',
-  styleUrl: './privat.component.scss',
+  templateUrl: './private.component.html',
+  styleUrls: ['./private.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PrivatComponent implements OnInit, AfterViewInit, OnDestroy {
+export class PrivateComponent implements OnInit, AfterViewInit, OnDestroy {
   protected activatedRoute = inject(ActivatedRoute);
   protected headerService = inject(HeaderService);
   protected readonly situations = SITUATIONS;
