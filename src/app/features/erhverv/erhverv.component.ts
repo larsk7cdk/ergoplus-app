@@ -2,24 +2,22 @@ import {
   ChangeDetectionStrategy,
   Component,
   inject,
-  OnInit
+  OnInit,
 } from '@angular/core';
 import { PageComponent } from '../../shared/components/core/page/page.component';
 import { HeaderService } from '../../shared/components/core/header/header.service';
-import { ActivatedRoute, RouterLink } from '@angular/router';
-import { CardComponent } from '../../shared/components/presentational/card/card.component';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
-    selector: 'app-ergotherapy',
-    imports: [PageComponent, CardComponent],
-    templateUrl: './ergoplus.component.html',
-    styleUrl: './ergoplus.component.scss',
-    changeDetection: ChangeDetectionStrategy.OnPush
+  selector: 'app-erhverv',
+  imports: [PageComponent],
+  templateUrl: './erhverv.component.html',
+  styleUrl: './erhverv.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ErgoplusComponent implements OnInit {
+export class ErhvervComponent implements OnInit {
   protected activatedRoute = inject(ActivatedRoute);
   protected headerService = inject(HeaderService);
-
 
   ngOnInit(): void {
     this.headerService.setTitle(this.activatedRoute.snapshot.data['title']);

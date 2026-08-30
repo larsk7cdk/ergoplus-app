@@ -2,7 +2,14 @@
   <div class="container">
     <div>
       <a class="navbar-brand" routerLink="/home">
-        <img src="assets/images/header/logoblaa.png" alt="ErgoPlus logo" style="object-fit: contain">
+        <img
+          ngSrc="assets/images/header/logoblaa.png"
+          width="278"
+          height="82"
+          alt="ErgoPlus logo"
+          priority
+          style="object-fit: contain"
+        >
       </a>
     </div>
 
@@ -27,6 +34,24 @@
         <li class="nav-item">
           <a
             class="nav-link"
+            routerLink="/privat"
+            routerLinkActive="active"
+            (click)="closeNavBar()"
+          >PRIVAT</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/erhverv"
+            routerLinkActive="active"
+            (click)="closeNavBar()"
+          >ERHVERV</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
             routerLink="/ergoterapi"
             routerLinkActive="active"
             (click)="closeNavBar()"
@@ -41,16 +66,6 @@
             (click)="closeNavBar()"
           >
             PRISER</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/omergoplus"
-            routerLinkActive="active"
-            (click)="closeNavBar()"
-          >
-            OM ERGOPLUS</a
           >
         </li>
       </ul>

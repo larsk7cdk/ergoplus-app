@@ -1,0 +1,55 @@
+<app-page [compact]="true">
+  <section class="page-header text-center">
+    <h1>Ergoterapi i dit eget hjem</h1>
+    <p class="lead mx-auto">
+      Uanset om det er dig selv eller en du holder af, der har brug for hjælp, møder jeg jer der hvor I er – og
+      finder sammen med jer vej til mere overskud og selvstændighed i hverdagen.
+    </p>
+  </section>
+</app-page>
+
+<section class="feature bg-app-beige">
+  <div class="container feature-inner">
+    <div class="feature-text">
+      <h2>Hjælp der tager udgangspunkt i dig</h2>
+      <p class="mt-3">
+        Jeg kommer hjem til dig, og sammen finder vi frem til de løsninger, der passer til netop din hverdag, dine
+        vaner og dine ønsker – uden at du er styret af tidsregistrering og kommunale serviceniveauer.
+      </p>
+      <p class="feature-note mt-3">
+        Du kan booke et enkelt besøg, eller et forløb med flere besøg. Se <a routerLink="/priser">priser og
+        muligheder</a>.
+      </p>
+    </div>
+
+    <div class="feature-image" #featureImage>
+      <img
+        ngSrc="assets/illustrations/private/privat_hjaelp.jpg"
+        width="1536"
+        height="1024"
+        class="rounded-4"
+        alt="Ergoterapeut der hjælper en klient i hjemmet"
+      />
+    </div>
+  </div>
+</section>
+
+<app-page [compact]="true">
+  <div class="situation-grid">
+    @for (situation of situations; track situation.title) {
+      <div class="situation-card rounded-4" [ngClass]="situation.background">
+        <div class="situation-card-image">
+          <img
+            [ngSrc]="situation.image"
+            [width]="situation.imageWidth"
+            [height]="situation.imageHeight"
+            [alt]="situation.alt"
+          />
+        </div>
+
+        <h3>{{ situation.title }}</h3>
+        <p>{{ situation.paragraphs[0] }}</p>
+      </div>
+    }
+  </div>
+</app-page>

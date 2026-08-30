@@ -8,53 +8,52 @@ import {
   ViewChild,
   inject,
 } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
+import { NgClass, NgOptimizedImage } from '@angular/common';
 import { PageComponent } from '../../shared/components/core/page/page.component';
-import { HeroComponent } from '../../shared/components/presentational/hero/hero.component';
 import { HeaderService } from '../../shared/components/core/header/header.service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { AUDIENCE_CARDS } from './audience.model';
+import { SITUATIONS } from './situation.model';
 
 @Component({
-  selector: 'app-home',
-  imports: [PageComponent, HeroComponent, RouterLink, NgOptimizedImage],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
+  selector: 'app-privat',
+  imports: [PageComponent, NgClass, NgOptimizedImage, RouterLink],
+  templateUrl: './privat.component.html',
+  styleUrl: './privat.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
+export class PrivatComponent implements OnInit, AfterViewInit, OnDestroy {
   protected activatedRoute = inject(ActivatedRoute);
   protected headerService = inject(HeaderService);
-  protected readonly audienceCards = AUDIENCE_CARDS;
+  protected readonly situations = SITUATIONS;
 
-  @ViewChild('bioImage') bioImage?: ElementRef<HTMLElement>;
+  @ViewChild('featureImage') featureImage?: ElementRef<HTMLElement>;
 
-  private bioImageObserver?: IntersectionObserver;
+  private featureImageObserver?: IntersectionObserver;
 
   ngOnInit(): void {
     this.headerService.setTitle(this.activatedRoute.snapshot.data['title']);
   }
 
   ngAfterViewInit(): void {
-    const element = this.bioImage?.nativeElement;
+    const element = this.featureImage?.nativeElement;
 
     if (!element) {
       return;
     }
 
-    this.bioImageObserver = new IntersectionObserver((entries) => {
+    this.featureImageObserver = new IntersectionObserver((entries) => {
       for (const entry of entries) {
         if (entry.isIntersecting) {
           element.classList.add('in-view');
-          this.bioImageObserver?.disconnect();
+          this.featureImageObserver?.disconnect();
         }
       }
     }, { threshold: 0.3 });
 
-    this.bioImageObserver.observe(element);
+    this.featureImageObserver.observe(element);
   }
 
   ngOnDestroy(): void {
-    this.bioImageObserver?.disconnect();
+    this.featureImageObserver?.disconnect();
   }
 }
