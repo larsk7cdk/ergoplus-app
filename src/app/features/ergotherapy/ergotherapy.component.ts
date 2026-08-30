@@ -3,7 +3,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  OnDestroy,
   OnInit,
   ViewChild,
   inject,
@@ -20,16 +19,13 @@ import Player, { VimeoUrl } from '@vimeo/player';
   styleUrl: './ergotherapy.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ErgotherapyComponent implements OnInit, AfterViewInit, OnDestroy {
+export class ErgotherapyComponent implements OnInit, AfterViewInit {
   protected activatedRoute = inject(ActivatedRoute);
   protected headerService = inject(HeaderService);
 
   private readonly videoUrl: VimeoUrl = 'https://vimeo.com/311435084';
 
   @ViewChild('playerContainer') playerContainer?: ElementRef<HTMLElement>;
-  @ViewChild('featureImage') featureImage?: ElementRef<HTMLElement>;
-
-  private featureImageObserver?: IntersectionObserver;
 
   ngOnInit() {
     this.headerService.setTitle(this.activatedRoute.snapshot.data['title']);
@@ -42,26 +38,5 @@ export class ErgotherapyComponent implements OnInit, AfterViewInit, OnDestroy {
         width: 280,
       });
     }
-
-    const element = this.featureImage?.nativeElement;
-
-    if (!element) {
-      return;
-    }
-
-    this.featureImageObserver = new IntersectionObserver((entries) => {
-      for (const entry of entries) {
-        if (entry.isIntersecting) {
-          element.classList.add('in-view');
-          this.featureImageObserver?.disconnect();
-        }
-      }
-    }, { threshold: 0.3 });
-
-    this.featureImageObserver.observe(element);
-  }
-
-  ngOnDestroy() {
-    this.featureImageObserver?.disconnect();
   }
 }
