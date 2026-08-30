@@ -8,6 +8,9 @@ import { RouterLink } from '@angular/router';
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: {
+    '[attr.title]': 'null',
+  },
 })
 export class HeroComponent {
   @Input({ required: true })
