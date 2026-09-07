@@ -3,42 +3,40 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  inject,
   OnInit,
   ViewChild,
+  inject,
 } from '@angular/core';
 import { PageComponent } from '../../shared/components/core/page/page.component';
 import { HeaderService } from '../../shared/components/core/header/header.service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { CardComponent } from '../../shared/components/presentational/card/card.component';
 import Player, { VimeoUrl } from '@vimeo/player';
 
 @Component({
   selector: 'app-ergotherapy',
-  imports: [PageComponent, CardComponent],
+  imports: [PageComponent, RouterLink],
   templateUrl: './ergotherapy.component.html',
   styleUrl: './ergotherapy.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ErgotherapyComponent implements OnInit, AfterViewInit {
-  @ViewChild('playerContainer') playerContainer: ElementRef;
-  url: VimeoUrl = 'https://vimeo.com/311435084';
-
   protected activatedRoute = inject(ActivatedRoute);
   protected headerService = inject(HeaderService);
 
-  constructor() {
-    this.playerContainer = new ElementRef(null);
-  }
+  private readonly videoUrl: VimeoUrl = 'https://vimeo.com/311435084';
 
-  ngOnInit(): void {
+  @ViewChild('playerContainer') playerContainer?: ElementRef<HTMLElement>;
+
+  ngOnInit() {
     this.headerService.setTitle(this.activatedRoute.snapshot.data['title']);
   }
 
   ngAfterViewInit() {
-    new Player(this.playerContainer.nativeElement, {
-      url: this.url,
-      width: 280,
-    });
+    if (this.playerContainer) {
+      new Player(this.playerContainer.nativeElement, {
+        url: this.videoUrl,
+        responsive: true,
+      });
+    }
   }
 }

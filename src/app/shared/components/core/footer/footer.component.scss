@@ -1,0 +1,14 @@
+@import "../../../../../styles";
+
+footer {
+  color: white;
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: $app-green-100;
+  }
+}
+
