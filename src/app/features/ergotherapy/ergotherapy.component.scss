@@ -37,38 +37,15 @@
   justify-content: center;
   width: 100%;
   max-width: 320px;
+
+  @include media-breakpoint-up(md) {
+    max-width: 450px;
+  }
 }
 
 .feature-video {
+  width: 100%;
   border-radius: 1rem;
   overflow: hidden;
 }
 
-// Second content section
-.content-intro {
-  h2 {
-    margin-top: 10px;
-  }
-}
-
-.content-text {
-  max-width: 720px;
-  margin: 30px auto 0;
-}
-
-.content-note {
-  font-size: 0.9rem;
-  color: $app-blue-600;
-}
-
-@include media-breakpoint-up(lg) {
-  .feature-inner {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
-
-  .feature-text {
-    max-width: 55%;
-  }
-}

@@ -35,7 +35,7 @@ export class ErgotherapyComponent implements OnInit, AfterViewInit {
     if (this.playerContainer) {
       new Player(this.playerContainer.nativeElement, {
         url: this.videoUrl,
-        width: 280,
+        responsive: true,
       });
     }
   }
