@@ -11,20 +11,9 @@
   h1 {
     font-style: italic;
   }
-
-  .lead {
-    max-width: 640px;
-    margin: 15px auto 0;
-  }
 }
 
 // Feature section
-.feature {
-  padding: 40px 0;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
 .feature-inner {
   display: flex;
   flex-direction: column;
@@ -137,7 +126,7 @@
   }
 
   .feature-text {
-    max-width: 55%;
+    max-width: 50%;
   }
 
   .situation-card {
