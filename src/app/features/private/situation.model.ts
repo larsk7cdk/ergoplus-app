@@ -13,8 +13,7 @@ export const SITUATIONS: Situation[] = [
     title: 'Du har ikke så mange kræfter',
     background: 'bg-app-green-100',
     paragraphs: [
-      'Du har svært ved at åbne flasker, nå ned til gulvet eller stå i længere tid. Du kan være nervøs for at tage bussen eller cykle.',
-      'Jeg tilbyder hjælp til at afprøve hjælpemidler, og sammen med dig lave en plan for, hvordan du kan træne i det, der er vigtigst for dig.',
+      'Du har svært ved at åbne flasker, nå ned til gulvet eller er blevet nervøs for at tage bussen. Jeg tilbyder afprøvning af de aktiviteter du ønsker, og sammen afprøver vi strategier, så du igen er så selvstændig som mulig.',
     ],
     image: 'assets/illustrations/services/elderly-people-professional_07.png',
     imageWidth: 200,
@@ -25,8 +24,7 @@ export const SITUATIONS: Situation[] = [
     title: 'Din nærmeste har brug for hjælp',
     background: 'bg-app-blue-100',
     paragraphs: [
-      'Din nærmeste har svært ved at få handlet, vasket tøj, gå i bad og har måske mange lægeaftaler eller aftaler med kommunen.',
-      'Jeg tilbyder træning i de daglige aktiviteter, hvor jeg afprøver aktiviteterne. Jeg tilbyder også følgeskab til læge og møder med kommunen.',
+      'Du hjælper din nærmeste med at få handlet, vasket tøj eller gå i bad. Jeg tilbyder afprøvning og træning i de aktiviteter som er blevet svære.',
     ],
     image: 'assets/illustrations/services/elderly-people-professional_04.png',
     imageWidth: 149,
@@ -37,8 +35,7 @@ export const SITUATIONS: Situation[] = [
     title: 'Du skal hjem fra hospital',
     background: 'bg-app-green-100',
     paragraphs: [
-      'Du skal udskrives efter længere tids indlæggelse. Din genoptræning er måske slut, og du er bekymret for hvordan det skal gå.',
-      'Jeg kan gøre din udskrivelse mere tryg, ved at besøge dig på hospitalet, og komme hjem til dig ved udskrivelse. Med mig kan du afprøve bad og indkøb. Jeg tilbyder vedligeholdende træning for at du bedst muligt kan bibeholde dét, du har opnået.',
+      'Du er blevet udskrevet fra hospitalet, og du er bekymret for hvordan det skal gå. Jeg besøger dig og sammen afprøver vi løsninger, der kan få dig tilbage til din hverdag.',
     ],
     image: 'assets/illustrations/services/doctor-patient_06.png',
     imageWidth: 100,
@@ -49,8 +46,7 @@ export const SITUATIONS: Situation[] = [
     title: 'Du bor på plejehjem',
     background: 'bg-app-blue-100',
     paragraphs: [
-      'Dagene kan være lange og du savner aktivitet, der interesserer dig. Du modtager måske lidt træning via kommunen, men vil gerne træne oftere.',
-      'Jeg tilbyder ergoterapi med fokus på at lave aktiviteter, som du kan lide. Med din tilladelse kan jeg kontakte din fysioterapeut, så træningen koordineres.',
+      'Dagene er lange og du savner aktivitet der interesserer dig. Jeg tilbyder ergoterapi med fokus på aktiviteter, som du kan lide, så du fysisk og kognitivt bliver udfordret.',
     ],
     image: 'assets/illustrations/services/volunteers-helping-elderly_09.png',
     imageWidth: 168,
@@ -58,13 +54,23 @@ export const SITUATIONS: Situation[] = [
     alt: 'Illustration',
   },
   {
-    title: 'Din ægtefælle er blevet syg',
+    title: 'Hjælpemidler er blevet din hverdag',
     background: 'bg-app-green-100',
     paragraphs: [
-      'Din ægtefælle har brug for hjemmepleje flere gange om dagen, og det er hårdt for jer begge. Der er mange ting at holde styr på.',
-      'Jeg tilbyder hjælp til de praktiske gøremål, og har fokus på at inddrage dig og din ægtefælle. Jeg kan hjælpe med ansøgninger indenfor Serviceloven.',
+      'Du har behov for hjælpemidler for at din hverdag fungerer. Nogle hjælpemidler bevilges af kommunen, og nogle hjælpemidler køber man selv. Jeg kan vejlede og rådgive i brug og køb af hjælpemidler, der kan afhjælpe dig i din hverdag.',
     ],
-    image: 'assets/illustrations/services/seniors-with-life-insurance.png',
+    image: 'assets/illustrations/services/dame_med_gangstativ.png',
+    imageWidth: 472,
+    imageHeight: 420,
+    alt: 'Illustration',
+  },
+  {
+    title: 'Du er bevilget hjælp fra kommunen',
+    background: 'bg-app-blue-100',
+    paragraphs: [
+      'Du er bevilget hjælp fra kommunen, men føler ikke at du bliver mødt i dine behov. Jeg kan tilbyde at være bisidder ved dine visitationsbesøg, og hjælpe dig med at dine synspunkter bliver hørt.',
+    ],
+    image: 'assets/illustrations/services/par_i_sofa.png',
     imageWidth: 472,
     imageHeight: 420,
     alt: 'Illustration',
