@@ -46,3 +46,9 @@ h1, h2, h3, h4, h5, h6 {
 .cc-highlight .cc-btn:first-child:focus {
   background-color: $app-green-100;
 }
+
+// The vendor theme fades the banner in/out via `transition: opacity 1s ease`
+// on .cc-window - override it so the banner appears instantly.
+.cc-window {
+  transition: none;
+}

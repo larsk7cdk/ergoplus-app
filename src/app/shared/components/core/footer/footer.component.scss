@@ -10,5 +10,10 @@ footer {
   a:hover, .btn-link:hover {
     color: $app-green-100;
   }
+
+  .btn-link {
+    font-size: inherit;
+    transition: none;
+  }
 }
 
