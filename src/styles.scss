@@ -28,3 +28,21 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary:hover {
   background-color: $app-blue-300 !important;
 }
+
+// Cookie consent banner: the vendor "cookieconsent" theme renders the deny
+// button (.cc-highlight .cc-btn:first-child) as a transparent ghost button by
+// default, so it reads as much less clickable than the solid "allow" button.
+// These rules match the vendor's hover/focus selector specificity so they
+// consistently win instead of flashing back to transparent on interaction.
+.cc-highlight .cc-btn:first-child,
+.cc-highlight .cc-btn:first-child:hover,
+.cc-highlight .cc-btn:first-child:focus {
+  background-color: #ffffff;
+  border-color: transparent;
+  color: $app-green-900;
+}
+
+.cc-highlight .cc-btn:first-child:hover,
+.cc-highlight .cc-btn:first-child:focus {
+  background-color: $app-green-100;
+}

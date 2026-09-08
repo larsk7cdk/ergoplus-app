@@ -1,0 +1,39 @@
+<app-page [compact]="true">
+  <section class="content-intro text-center">
+    <h1>Cookiepolitik</h1>
+  </section>
+
+  <div class="content-text">
+    <p>
+      ErgoPlus bruger cookies på hjemmesiden. Herunder kan du se, hvilke cookies vi bruger, og hvad de bruges til.
+      Du kan til enhver tid ændre dit samtykke.
+    </p>
+
+    <h2>Nødvendige cookies</h2>
+    <p>
+      Disse cookies er nødvendige for, at hjemmesiden kan fungere, og kræver ikke dit samtykke.
+    </p>
+    <ul>
+      <li>
+        <strong>cookieconsent_status</strong> – husker dit valg om cookies, så du ikke skal tage stilling igen ved
+        hvert besøg. Gemmes i op til 365 dage.
+      </li>
+    </ul>
+
+    <h2>Statistik-cookies</h2>
+    <p>
+      Disse cookies bruger vi kun, hvis du har givet samtykke til det. De hjælper os med at forstå, hvordan
+      hjemmesiden bliver brugt, så vi kan forbedre den.
+    </p>
+    <ul>
+      <li>
+        <strong>Google Tag Manager</strong> (container-id: GTM-P4MFR9GP) – indlæses først, når du har givet
+        samtykke til statistik-cookies.
+      </li>
+    </ul>
+
+    <button type="button" class="btn btn-primary mt-3" (click)="openCookieSettings()">
+      Skift dine cookie-indstillinger
+    </button>
+  </div>
+</app-page>

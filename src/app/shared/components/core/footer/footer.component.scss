@@ -3,11 +3,11 @@
 footer {
   color: white;
 
-  a {
+  a, .btn-link {
     color: white;
   }
 
-  a:hover {
+  a:hover, .btn-link:hover {
     color: $app-green-100;
   }
 }

@@ -36,5 +36,12 @@ export const routes: Routes = [
     loadComponent: () => import('./features/prices/prices.component')
       .then(m => m.PricesComponent)
   },
+  {
+    path: 'cookiepolitik',
+    title: 'Cookiepolitik',
+    data: { title: 'Cookiepolitik' },
+    loadComponent: () => import('./features/cookie-policy/cookie-policy.component')
+      .then(m => m.CookiePolicyComponent)
+  },
   { path: '**', redirectTo: 'forside', pathMatch: 'full' }
 ];

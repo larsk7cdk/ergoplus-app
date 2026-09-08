@@ -14,7 +14,7 @@ import Player, { VimeoUrl } from '@vimeo/player';
 
 @Component({
   selector: 'app-ergotherapy',
-  imports: [PageComponent, RouterLink],
+  imports: [PageComponent],
   templateUrl: './ergotherapy.component.html',
   styleUrl: './ergotherapy.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
