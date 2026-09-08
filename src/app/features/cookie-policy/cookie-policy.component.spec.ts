@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideRouter } from '@angular/router';
 
-import { FooterComponent } from './footer.component';
-import { ConsentService } from '../../../services/consent/consent.service';
+import { CookiePolicyComponent } from './cookie-policy.component';
+import { ConsentService } from '../../shared/services/consent/consent.service';
 
-describe('FooterComponent', () => {
-  let component: FooterComponent;
-  let fixture: ComponentFixture<FooterComponent>;
+describe('CookiePolicyComponent', () => {
+  let component: CookiePolicyComponent;
+  let fixture: ComponentFixture<CookiePolicyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FooterComponent],
+      imports: [CookiePolicyComponent],
       providers: [
         provideRouter([]),
         { provide: ConsentService, useValue: jasmine.createSpyObj<ConsentService>('ConsentService', ['openPreferences']) },
@@ -18,7 +18,7 @@ describe('FooterComponent', () => {
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FooterComponent);
+    fixture = TestBed.createComponent(CookiePolicyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

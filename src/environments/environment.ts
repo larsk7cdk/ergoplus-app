@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  cookieDomain: 'localhost'
+  cookieDomain: 'localhost',
+  gtmId: 'GTM-P4MFR9GP'
 };
 
 /*
