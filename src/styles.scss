@@ -28,3 +28,40 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary:hover {
   background-color: $app-blue-300 !important;
 }
+
+// Cookie consent banner: the vendor "cookieconsent" theme renders the deny
+// button (.cc-highlight .cc-btn:first-child) as a transparent ghost button by
+// default, so it reads as much less clickable than the solid "allow" button.
+// These rules match the vendor's hover/focus selector specificity so they
+// consistently win instead of flashing back to transparent on interaction.
+.cc-highlight .cc-btn:first-child,
+.cc-highlight .cc-btn:first-child:hover,
+.cc-highlight .cc-btn:first-child:focus {
+  background-color: #ffffff;
+  border-color: transparent;
+  color: $app-green-900;
+}
+
+.cc-highlight .cc-btn:first-child:hover,
+.cc-highlight .cc-btn:first-child:focus {
+  background-color: $app-green-100;
+}
+
+// The vendor theme fades the banner in/out via `transition: opacity 1s ease`
+// on .cc-window - shorten it so the banner appears/disappears almost
+// instantly. Don't use `transition: none`: the library's dismiss logic
+// waits for the CSS `transitionend` event to set `display: none` on the
+// banner, so removing the transition entirely leaves it invisible but still
+// `display: flex` with `pointer-events: auto`, blocking clicks on whatever
+// is underneath it (e.g. the footer's cookie links).
+.cc-window {
+  transition: opacity 0.01s linear;
+}
+
+// The library forces `revokable` to true internally for any non-'info' type
+// (see cookie-consent.config.ts), which renders a floating "manage consent"
+// tab. The footer already has its own "Administrér cookies" link for that,
+// so hide the duplicate floating tab - there's no config option to disable it.
+.cc-revoke {
+  display: none !important;
+}

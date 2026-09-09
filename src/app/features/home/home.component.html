@@ -12,11 +12,11 @@
   <h2 class="text-center mb-4">Hvem kan jeg hjælpe?</h2>
 
   <div class="audience-cards">
-    @for (card of audienceCards; track card.title) {
+    @for (card of audienceCards; track card.title; let i = $index) {
       <div class="audience-card">
         @if (card.image) {
           <div class="audience-card-image rounded-4">
-            <img [ngSrc]="card.image" [alt]="card.title" fill/>
+            <img [ngSrc]="card.image" [alt]="card.title" [priority]="i === 0" fill/>
           </div>
         } @else {
           <div class="audience-card-image audience-card-placeholder rounded-4">

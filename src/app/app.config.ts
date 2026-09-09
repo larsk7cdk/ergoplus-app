@@ -16,43 +16,10 @@ import {
   PathLocationStrategy,
   registerLocaleData,
 } from '@angular/common';
-import {
-  NgcCookieConsentConfig,
-  provideNgcCookieConsent,
-} from 'ngx-cookieconsent';
-import { environment } from '../environments/environment';
+import { provideNgcCookieConsent } from 'ngx-cookieconsent';
+import { cookieConfig } from './shared/services/consent/cookie-consent.config';
 
 registerLocaleData(localeDa);
-
-const cookieConfig: NgcCookieConsentConfig = {
-  cookie: {
-    domain: environment.cookieDomain,
-  },
-  position: 'bottom',
-  theme: 'classic',
-  palette: {
-    popup: {
-      background: '#72a88d',
-      text: '#ffffff',
-      link: '#ffffff',
-    },
-    button: {
-      background: '#f45b07',
-      text: '#000000',
-      border: 'transparent',
-    },
-  },
-  type: 'info',
-  content: {
-    message:
-      'Denne hjemmeside bruger cookies for at sikre, at du får den bedste oplevelse på hjemmesiden.',
-    dismiss: 'Tillad cookies',
-    deny: 'Afvis cookies',
-    link: '',
-    href: 'https://cookiesandyou.com',
-    policy: 'Cookie Policy',
-  },
-};
 
 export const appConfig: ApplicationConfig = {
   providers: [
