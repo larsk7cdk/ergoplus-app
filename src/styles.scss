@@ -48,7 +48,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // The vendor theme fades the banner in/out via `transition: opacity 1s ease`
-// on .cc-window - override it so the banner appears instantly.
+// on .cc-window - shorten it so the banner appears/disappears almost
+// instantly. Don't use `transition: none`: the library's dismiss logic
+// waits for the CSS `transitionend` event to set `display: none` on the
+// banner, so removing the transition entirely leaves it invisible but still
+// `display: flex` with `pointer-events: auto`, blocking clicks on whatever
+// is underneath it (e.g. the footer's cookie links).
 .cc-window {
-  transition: none;
+  transition: opacity 0.01s linear;
+}
+
+// The library forces `revokable` to true internally for any non-'info' type
+// (see cookie-consent.config.ts), which renders a floating "manage consent"
+// tab. The footer already has its own "Administrér cookies" link for that,
+// so hide the duplicate floating tab - there's no config option to disable it.
+.cc-revoke {
+  display: none !important;
 }

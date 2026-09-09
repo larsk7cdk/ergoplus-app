@@ -13,8 +13,9 @@ export const cookieConfig: NgcCookieConsentConfig = {
   type: 'opt-in',
   // The underlying `cookieconsent` library forces this to true for any
   // non-'info' type regardless of what's set here - kept explicit and true
-  // so the floating "manage consent" tab (labelled via content.policy below)
-  // is a deliberate, understood part of the design, not an accident.
+  // to reflect that. The resulting floating "manage consent" tab is hidden
+  // in styles.scss (.cc-revoke) since the footer has its own link for that;
+  // `content.policy` below still labels it in case that CSS is ever removed.
   revokable: true,
   palette: {
     popup: {
